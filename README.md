@@ -2,59 +2,82 @@
 >
 > This public repository serves as the **Engineering & Architecture Log**. Here you will find the system architecture, ADRs (Architecture Decision Records), and troubleshooting logs that demonstrate my system design and problem-solving skills.
 
-# 🧠 Syndra 📰
+# 🧠 Syndra - Financial self-hosted AI & DaaS Platform 📈
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
-> **Intelligent News Aggregator leveraging Edge AI, Hybrid Search, and robust Data Engineering.**
+> **B2B FinTech Data-as-a-Service (DaaS) Platform leveraging self-hosted AI, NLP, and robust Data Engineering for financial intelligence.**
 
-Syndra is designed to combat **"infoxication"** through semantic understanding of news articles and user-aligned personalized feeds. Built with a strict **Docker-First**, **Microservices-oriented Monorepo** architecture.
+Syndra extracts financial news, runs local NLP (sentence-transformers/GGUF models) to calculate sentiment and extract tickers, and serves the enriched data via a high-performance REST API. 
+
+**Note: Syndra is strictly API-First. There is no GUI or frontend component.**
+
+---
+
+## ⚡ API Preview
+
+Syndra serves actionable financial intelligence directly to your systems.
+
+**Request:**
+```bash
+curl -X GET "http://localhost:8000/api/v1/sentiment/AAPL" \
+     -H "Accept: application/json"
+```
+
+**Response:**
+```json
+{
+  "ticker": "AAPL",
+  "sentiment_score": 0.82,
+  "trend": "bullish",
+  "recent_headlines": [
+    "Apple unveils new AI features across product line",
+    "Strong Q3 earnings reported for AAPL",
+    "Analysts upgrade Apple target price"
+  ]
+}
+```
 
 ---
 
 ## ✨ Core Features
 
-- **Automated Data Pipelines:** Fault-tolerant News RSS scraping via Prefect.
-- **Strict Data Contracts:** Pydantic validation ensuring only clean data enters the system.
+- **Automated Data Pipelines:** Fault-tolerant financial news extraction via Prefect workflows.
+- **Strict Data Contracts:** Pydantic validation ensuring pristine data quality and type safety.
 - **Idempotent Ingestion:** Safe retry mechanisms preventing duplicate database entries via URL hashing.
-- **Semantic Search:** Find articles by meaning via Vector Embeddings, not just exact keyword matches.
-- **Local AI Processing:** 100% private, on-device Machine Learning inference.
+- **Local AI Processing:** 100% private, on-device NLP inference for sentiment analysis and ticker extraction (Edge AI/sentence-transformers).
+- **API-First Architecture:** High-performance, highly concurrent REST APIs designed for B2B integration.
 
 ---
 
-## 🏗 System Architecture
+## 🏗 System Architecture & Stack
 
-The project follows a modular, high-performance pipeline:
+The platform is designed as a modular, high-performance DaaS pipeline utilizing the following core stack:
+- **Docker**
+- **FastAPI**
+- **PostgreSQL**
+- **Prefect**
+- **Qdrant**
+- **Local GGUF/Transformer models**
 
-1.  **Data Engineering (ETL):** `Scrapy` + `Prefect` extracting and validating data into a raw Postgres layer.
-2.  **MLOps (Batch Inference):** Local LLMs (`llama.cpp` + `GGUF`) summarizing and generating embeddings (`sentence-transformers`).
-3.  **High-Performance Backend:** Async `FastAPI` serving Hybrid Search (BM25 + Vector) via `Qdrant` & `PostgreSQL`.
-4.  **RecSys:** User-vector profiling based on reading history context.
+### Pipeline Overview
 
-### The Ingestion Pipeline
-```mermaid
-graph LR
-    A[RSS Feed] -->|Scrapy| B(Pydantic Schema)
-    B -->|Validation| C{Valid?}
-    C -->|Yes| D[Inject Payload Title]
-    C -->|No| E[Log Error]
-    D --> F[(PostgreSQL)]
-    F -->|Prefect Flow Complete| G[Done]
-```
+1. **Data Engineering (ETL):** Extraction pipelines managed by `Prefect` loading raw financial text into a `PostgreSQL` foundation.
+2. **MLOps (Batch Inference):** Local sequence models (`sentence-transformers` & `GGUF` architectures) extract financial tickers and compute robust sentiment scores.
+3. **High-Performance Backend:** Async `FastAPI` serving strict data contracts, backed by `Qdrant` (Vector/Semantic data) & `PostgreSQL` (Relational data).
 
 ---
 
 ## 📂 Monorepo Structure
 
 ```text
-neural-news/
-├── backend/          # FastAPI application, Pydantic models, ML inference routers
-├── frontend/         # MVP UI (Streamlit / React)
-├── infra/            # Nginx, Prometheus/Grafana configs (Future)
-├── docs/             # Extended architecture documents (C4 models)
+syndra-data-engine/
+├── backend/          # FastAPI application, strictly typed DTOs, routing
+├── infra/            # Docker-First infrastructure configurations
+├── docs/             # Architecture and platform documentation
 ├── docker-compose.yml# Main Docker infrastructure configuration
 ├── .env.example      # Global environment variables template
 └── README.md         # This file
@@ -64,12 +87,12 @@ neural-news/
 
 ## 🚀 Quickstart (Docker-First)
 
-The entire stack is containerized. **You MUST have Docker and Docker Compose V2 installed** on your host machine. No local Python environments or database installations are required.
+The entire stack is containerized. **You MUST have Docker and Docker Compose V2 installed** on your host machine. 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/FranSMM/neural-news.git
-cd neural-news
+git clone https://github.com/FranSMM/syndra-data-engine.git
+cd syndra-data-engine
 ```
 
 ### 2. Setup environment variables
@@ -85,7 +108,7 @@ docker compose up -d
 ```
 
 ### 4. Run the ETL Pipeline
-Extract, validate, and load news articles into your PostgreSQL database asynchronously:
+Extract, validate, and load financial intelligence into your PostgreSQL database asynchronously:
 ```bash
 make run-etl
 ```
@@ -93,9 +116,8 @@ make run-etl
 ---
 
 ## 📚 Documentation
-For more detailed information on specific modules, refer to their respective READMEs:
+For detailed information on platform modules:
 - [Backend Documentation](./backend/README.md)
-- [Frontend Documentation](./frontend/README.md)
 - [Infrastructure Documentation](./infra/README.md)
 - [Architecture Decision Records](./docs/arquitecture_decision_records.md)
 - [Troubleshooting & Incidents](./docs/troubleshooting.md)
