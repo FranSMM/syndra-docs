@@ -1,6 +1,6 @@
 # 🧠 Architecture Decision Records (ADRs)
 
-> This document tracks the high-level engineering decisions made during the development of Syndra.
+> This document tracks the engineering decisions I made while developing Syndra.
 
 ---
 
