@@ -2,7 +2,7 @@
 
 > A transparent record of critical bugs, infrastructure issues, and their exact technical resolutions.
 
-| ID | Título |
+| ID | Title |
 |----|--------|
 | [INC-001](./troubleshooting/001_docker_wsl_permissionerror_13.md) | Docker WSL `PermissionError 13` |
 | [INC-002](./troubleshooting/002_pep_668_externally_managed_environment.md) | PEP 668 `externally-managed-environment` |

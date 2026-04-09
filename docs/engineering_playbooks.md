@@ -2,7 +2,7 @@
 
 > This document contains the reusable code snippets and engineering standards utilized across the Syndra monorepo.
 
-| ID | Título |
+| ID | Title |
 |----|--------|
 | [PLB-001](./engineering_playbooks/001_fail_fast_configuration_with_pydantic.md) | "Fail-Fast" Configuration with Pydantic |
 | [PLB-002](./engineering_playbooks/002_optimized_dockerfile_for_python_fastapi.md) | Optimized Dockerfile for Python/FastAPI |

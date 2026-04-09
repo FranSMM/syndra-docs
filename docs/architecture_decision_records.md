@@ -2,7 +2,7 @@
 
 > This document tracks the engineering decisions I made while developing Syndra.
 
-| ID | Título | Estado |
+| ID | Title | Status |
 |----|--------|--------|
 | [ADR-001](./adr/001_docker_first_infrastructure.md) | "Docker-First" Infrastructure | Accepted |
 | [ADR-002](./adr/002_choosing_fastapi_over_flask_django.md) | Choosing FastAPI over Flask/Django | Accepted |
