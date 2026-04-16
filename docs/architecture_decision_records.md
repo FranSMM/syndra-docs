@@ -20,3 +20,13 @@
 | [ADR-014](./adr/014_cpu_isolation_for_semantic_embeddings.md) | CPU Isolation for Semantic Embeddings | Accepted |
 | [ADR-015](./adr/015_endpoint_consolidation_accepted_technical_debt.md) | Endpoint Consolidation (Accepted Technical Debt) | Accepted |
 | [ADR-016](./adr/016_iterative_batch_processing_for_ml_inference.md) | Iterative Batch Processing for ML Inference | Accepted |
+| [ADR-017](./adr/017_qdrant_vs_pgvector.md) | Selection of Qdrant over pgvector for Vector Search | Accepted |
+| [ADR-018](./adr/018_vps_provider_hetzner_selection.md) | Selection of Hetzner for Production VPS Infrastructure | Accepted |
+| [ADR-019](./adr/019_api_and_scheduler_container_separation.md) | Architectural Separation of API and Scheduler Containers | Accepted |
+| [ADR-020](./adr/020_incremental_vectorization_flag.md) | Incremental Vectorization via is_vectorized Flag | Accepted |
+| [ADR-021](./adr/021_url_hashing_deduplication.md) | Hashing also Title instead just URL for Duplicate Prevention | To-Do |
+| [ADR-022](./adr/022_immutable_gitops_infrastructure.md) | Transition to Immutable GitOps Infrastructure in Production | Accepted |
+| [ADR-023](./adr/023_qdrant_payload_keyword_indexing.md) | Keyword Payload Indexing for Pre-Filtering in Qdrant | Accepted |
+| [ADR-024](./adr/024_medallion_architecture_bronze_silver_separation.md) | Complete Medallion Architecture Separation (Bronze/Silver) | Accepted |
+| [ADR-025](./adr/025_ticker_dictionary_enhancement.md) | Institutional Ticker Dictionary Enhancement | Accepted |
+| [ADR-026](./adr/026_lazy_loading_ephemeral_ml_models.md) | Lazy Loading for Ephemeral ML Models | Accepted |
