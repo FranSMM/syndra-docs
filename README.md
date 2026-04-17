@@ -2,6 +2,10 @@
 >
 > This public repository serves as the **Engineering & Architecture Log**. Here you will find the system architecture, ADRs (Architecture Decision Records), and troubleshooting logs that demonstrate my system design and problem-solving skills.
 
+<p align="center">
+  <img src="assets/public/syndra_data_engine_hero.png" alt="Syndra Logo" width="100%">
+</p>
+
 # 🧠 Syndra - Advanced Financial DaaS Platform 📈
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -60,6 +64,37 @@ Syndra prioritizes data immutability, mathematical resiliency, and clear separat
   - *Gold:* Aggregated features ready for quantitative consumption.
 - **Strict Data Contracts (FastAPI / Pydantic):** Immutable Egress and Ingress boundaries. Upstream data model shifts (e.g., changes in web layouts) fail fast locally, preventing downstream database corruption.
 - **Vector Search (Qdrant):** High-dimensional financial embeddings index semantic similarity, unlocking contextual alpha discovery beyond traditional keyword matching.
+
+---
+
+## 🗺️ System Architecture
+
+```mermaid
+graph LR
+    %%{init: {'themeVariables': { 'fontSize': '12px', 'nodePadding': 8 }}}%%
+    %% Styles
+    classDef source fill:#f9f9f9,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
+    classDef storage fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#01579b
+    classDef compute fill:#f3e5f5,stroke:#8e24aa,stroke-width:2px,color:#4a148c
+    classDef api fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#1b5e20
+
+    %% Main pipeline
+    A["🌐 RSS Feeds<br/>(Financial News)"]:::source
+    B[/"🕸️ Web Crawler<br/>(Python Scrapy)"/]:::compute
+    C[("🥉 Bronze Layer<br/>(PostgreSQL JSONB)")]:::storage
+    D{"🧠 NLP Engine<br/>(FinBERT Sentiment)"}:::compute
+    E[("🥈 Silver Layer<br/>(Relational Data)")]:::storage
+    F{"⚙️ Embedding Engine<br/>(MiniLM Vectors)"}:::compute
+    G[("🥇 Gold Layer<br/>(Qdrant DB)")]:::storage
+
+    A --> B --> C --> D --> E --> F --> G
+
+    %% API layer (separate row naturally)
+    H(["🚀 B2B REST API<br/>(FastAPI)"]):::api
+
+    E -->|Relational Queries| H
+    G -->|Semantic Search| H
+```
 
 ---
 
