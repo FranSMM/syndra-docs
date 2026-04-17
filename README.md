@@ -24,6 +24,10 @@ Built on the principle of **Zero Data Leakage**, Syndra ensures absolute data so
 
 Syndra acts as the programmatic intelligence layer for downstream trading and analytics platforms.
 
+| 📊 Ticker Sentiment Search | 🧠 Semantic Vector Search |
+| :---: | :---: |
+| <img src="assets/public/swagger_ticker.png" alt="Swagger Ticker Search" width="100%"> | <img src="assets/public/swagger_semantic.png" alt="Swagger Semantic Search" width="100%"> |
+
 ### Target Endpoint: Semantic Sentiment
 
 **Request:**
