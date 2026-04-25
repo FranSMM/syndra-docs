@@ -16,3 +16,7 @@
 | [PLB-010](./engineering_playbooks/010_disaster_recovery_vector_database_qdrant.md) | Disaster Recovery: Vector Database (Qdrant) |
 | [PLB-011](./engineering_playbooks/011_end_to_end_etl_execution_prefect.md) | End-to-End ETL Execution (Prefect) |
 | [PLB-012](./engineering_playbooks/012_data_quality_incident_response.md) | Data Quality & Incident Response |
+| [PLB-013](./engineering_playbooks/013_production_deployment_cicd.md) | Production Deployment (Local CI/CD) |
+| [PLB-014](./engineering_playbooks/014_b2b_client_onboarding.md) | B2B Client Onboarding (API Key Provisioning) |
+| [PLB-015](./engineering_playbooks/015_redis_monitoring_cache_management.md) | Redis Monitoring & Cache Management |
+| [PLB-016](./engineering_playbooks/016_api_key_rotation_security_response.md) | API Key Rotation & Security Incident Response |

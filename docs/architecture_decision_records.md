@@ -30,3 +30,7 @@
 | [ADR-024](./adr/024_medallion_architecture_bronze_silver_separation.md) | Complete Medallion Architecture Separation (Bronze/Silver) | Accepted |
 | [ADR-025](./adr/025_ticker_dictionary_enhancement.md) | Institutional Ticker Dictionary Enhancement | Accepted |
 | [ADR-026](./adr/026_lazy_loading_ephemeral_ml_models.md) | Lazy Loading for Ephemeral ML Models | Accepted |
+| [ADR-027](./adr/027_sql_jsonb_filtering_vectorization.md) | SQL-Level JSONB Filtering for Vectorization Pipeline | Accepted |
+| [ADR-028](./adr/028_native_auth_cache_rate_limiting.md) | Native Authentication, Cache, and Rate Limiting (Zero Dependencies) | Accepted |
+| [ADR-029](./adr/029_byos_flashtext_source_agnostic_ingestion.md) | BYOS (Bring Your Own Source) and FlashText for Source-Agnostic Ingestion | Accepted |
+| [ADR-030](./adr/030_redis_unified_session_state_backend.md) | Redis as the Unified Session-State Backend | Accepted |

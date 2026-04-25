@@ -19,3 +19,6 @@
 | [INC-013](./troubleshooting/013_broken_data_lineage_missing_source_field_in_scrapy.md) | Broken Data Lineage: Missing source Field in Scrapy |
 | [INC-014](./troubleshooting/014_qdrant_payload_mismatches.md) | Qdrant Payload Mismatches (Null Returns) |
 | [INC-015](./troubleshooting/015_silent_accumulation_of_pending_articles.md) | Silent Accumulation of Pending Articles (Pipeline Choke) |
+| [INC-016](./troubleshooting/016_prefect_scheduler_inactive_ephemeral_server.md) | Prefect Scheduler Inactive on Ephemeral Server |
+| [INC-017](./troubleshooting/017_alembic_orm_mismatch_silver_migration.md) | Alembic ORM Mismatch During Silver Layer Migration |
+| [INC-018](./troubleshooting/018_data_loss_scrapy_overwrite_flag.md) | Data Loss by Overwrite in Multi-Source Scrapy Ingestion |
