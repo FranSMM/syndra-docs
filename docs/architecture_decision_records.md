@@ -34,3 +34,5 @@
 | [ADR-028](./adr/028_native_auth_cache_rate_limiting.md) | Native Authentication, Cache, and Rate Limiting (Zero Dependencies) | Accepted |
 | [ADR-029](./adr/029_byos_flashtext_source_agnostic_ingestion.md) | BYOS (Bring Your Own Source) and FlashText for Source-Agnostic Ingestion | Accepted |
 | [ADR-030](./adr/030_redis_unified_session_state_backend.md) | Redis as the Unified Session-State Backend | Accepted |
+| [ADR-031](./adr/031_caddy_vs_nginx_vs_traefix.md) | Caddy vs Nginx vs Traefik for Reverse Proxy & SSL Management | Accepted |
+| [ADR-032](./adr/032_per_client_response_cache_isolation.md) | Per-Client Response Cache Isolation | Accepted |
