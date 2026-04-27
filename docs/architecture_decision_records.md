@@ -36,3 +36,4 @@
 | [ADR-030](./adr/030_redis_unified_session_state_backend.md) | Redis as the Unified Session-State Backend | Accepted |
 | [ADR-031](./adr/031_caddy_vs_nginx_vs_traefix.md) | Caddy vs Nginx vs Traefik for Reverse Proxy & SSL Management | Accepted |
 | [ADR-032](./adr/032_per_client_response_cache_isolation.md) | Per-Client Response Cache Isolation | Accepted |
+| [ADR-033](./adr/033_late_deduplication_serving_layer.md) | Late Deduplication in Serving Layer via SequenceMatcher | Accepted |

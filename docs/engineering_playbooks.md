@@ -20,3 +20,4 @@
 | [PLB-014](./engineering_playbooks/014_b2b_client_onboarding.md) | B2B Client Onboarding (API Key Provisioning) |
 | [PLB-015](./engineering_playbooks/015_redis_monitoring_cache_management.md) | Redis Monitoring & Cache Management |
 | [PLB-016](./engineering_playbooks/016_api_key_rotation_security_response.md) | API Key Rotation & Security Incident Response |
+| [PLB-017](./engineering_playbooks/017_deduplication_monitoring.md) | Monitoring Serving-Layer Deduplication |
