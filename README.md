@@ -32,25 +32,29 @@ Syndra acts as the programmatic intelligence layer for downstream trading and an
 
 **Request:**
 ```bash
-curl -X GET "https://api.syndradata.com/v1/sentiment/AAPL" \
-     -H "Authorization: Bearer <API_KEY>" \
+curl -X GET "https://api.syndradata.com/api/v1/sentiment/AAPL" \
+     -H "X-API-Key: syndra_XXXXXXXXXXXXXXXXXX" \
      -H "Accept: application/json"
 ```
 
 **Response Data Contract:**
 ```json
 {
+  "status": "success",
   "ticker": "AAPL",
-  "aggregated_sentiment_score": 0.8245,
-  "trend": "bullish",
-  "confidence_interval": 0.94,
-  "signal_metadata": {
-    "analyzed_articles": 142,
-    "last_updated": "2026-04-06T00:15:00Z"
-  },
-  "semantic_context": [
-    "Apple accelerates AI deployment across edge devices",
-    "Forward earnings expectations revised upwards by major analysts"
+  "time_window": "3 days",
+  "aggregated_sentiment": "positive",
+  "average_score": 0.6543,
+  "article_count": 42,
+  "recent_signals": [
+    {
+      "title": "Apple accelerates AI deployment across edge devices",
+      "url": "https://finance.yahoo.com/news/apple-ai...",
+      "published_at": "2026-04-27T10:20:00",
+      "source": "Finance.yahoo.com",
+      "sentiment_label": "positive",
+      "sentiment_score": 0.8468
+    }
   ]
 }
 ```
@@ -105,7 +109,7 @@ graph LR
 ## 🏗 Technology Stack
 
 - **Data Engineering:** Prefect (Workflow Orchestration), Scrapy (Extraction).
-- **Storage & Search:** PostgreSQL 16 (Relational & JSONB), Qdrant (Vector Database).
+- **Storage & Search:** PostgreSQL 15 (Relational & JSONB), Qdrant (Vector Database).
 - **Backend Services:** FastAPI, SQLAlchemy 2.0 (Async), Uvicorn.
 - **MLOps:** PyTorch, Sentence-Transformers.
 - **Infrastructure:** Docker, Docker Compose V2.
