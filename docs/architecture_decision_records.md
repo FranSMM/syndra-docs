@@ -37,3 +37,6 @@
 | [ADR-031](./adr/031_caddy_vs_nginx_vs_traefix.md) | Caddy vs Nginx vs Traefik for Reverse Proxy & SSL Management | Accepted |
 | [ADR-032](./adr/032_per_client_response_cache_isolation.md) | Per-Client Response Cache Isolation | Accepted |
 | [ADR-033](./adr/033_late_deduplication_serving_layer.md) | Late Deduplication in Serving Layer via SequenceMatcher | Accepted |
+| [ADR-034](./adr/034_atomic_rate_limiting_lua_script.md) | Atomic Rate Limiting via Redis Lua Script | Accepted |
+| [ADR-035](./adr/035_semantic_search_caching_and_offloading.md) | Response Caching and Thread Offloading for Semantic Search | Accepted |
+| [ADR-036](./adr/036_rfc822_date_normalisation_byos.md) | RFC 822 Date Normalisation — the precondition for BYOS | Accepted |
