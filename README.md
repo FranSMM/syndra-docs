@@ -14,7 +14,8 @@
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Qdrant](https://img.shields.io/badge/Qdrant-FF5252?style=for-the-badge&logo=qdrant)
 
-👉 **[Live Demo: syndra-demo.streamlit.app](https://syndra-demo.streamlit.app/)**
+🌐 **[syndradata.com](https://syndradata.com/)** · 📊 **[Live demo](https://demo.syndradata.com/)** · 📖 **[API docs](https://api.syndradata.com/docs)**
+
 <p align="center">
   <img src="assets/public/syndra_demo_dashboard.png" alt="Syndra Demo Dashboard" width="100%">
 </p>
@@ -114,10 +115,11 @@ graph LR
 ## 🏗 Technology Stack
 
 - **Data Engineering:** Prefect (Workflow Orchestration), Scrapy (Extraction).
-- **Storage & Search:** PostgreSQL 15 (Relational & JSONB), Qdrant (Vector Database).
+- **Storage & Search:** PostgreSQL 15 (Relational & JSONB), Qdrant (Vector Database), Redis (response cache, API key cache, rate limiting).
 - **Backend Services:** FastAPI, SQLAlchemy 2.0 (Async), Uvicorn.
 - **MLOps:** PyTorch, Sentence-Transformers.
-- **Infrastructure:** Docker, Docker Compose V2.
+- **Infrastructure:** Docker, Docker Compose V2, Caddy (sole ingress, automatic TLS).
+- **Public Surfaces:** Streamlit (interactive demo), static HTML/CSS landing.
 
 ---
 
@@ -126,9 +128,12 @@ graph LR
 ```text
 syndra-data-engine/
 ├── backend/          # Microservices, strictly typed DTOs, API routing
+├── demo/             # Public Streamlit demo, self-hosted at demo.syndradata.com
+├── frontend/         # Static landing page for syndradata.com
 ├── infra/            # Immutable infrastructure definitions
 ├── docs/             # ADRs, Playbooks, and Incident Management
-├── docker-compose.yml# Container orchestration
+├── deploy.sh         # SHA-tagged, selective deployment to the VPS
+├── docker-compose.yml# Local development stack
 └── README.md         # Platform Entrypoint
 ```
 
