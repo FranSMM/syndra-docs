@@ -145,3 +145,13 @@ For detailed information on platform modules and architectural decisions, please
 - [Architecture Decision Records (ADRs)](./docs/architecture_decision_records.md)
 - [Engineering Playbooks](./docs/engineering_playbooks.md)
 - [Incident Response & Troubleshooting](./docs/troubleshooting.md)
+
+---
+
+## 📜 License
+
+Copyright (C) 2026 Francisco Sánchez-Montesinos Molinero.
+
+Syndra is licensed under the [GNU Affero General Public License v3.0](./LICENSE). You may use, study, modify and redistribute it under its terms. If you run a modified version as a network service, the AGPL requires you to offer its users the corresponding source code.
+
+For use under different terms, such as embedding Syndra in a closed-source product, contact the author for a commercial license.
