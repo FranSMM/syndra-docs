@@ -30,7 +30,7 @@ docker compose exec redis redis-cli --scan --pattern "auth:*" | xargs docker com
 ```
 
 > [!IMPORTANT]
-> This flushes ALL auth caches, not just the compromised client's. This is intentional — since we store hashes, we cannot identify which `auth:` key belongs to the compromised client without recomputing all hashes.
+> This flushes ALL auth caches, not just the compromised client's. This is intentional: since we store hashes, we cannot identify which `auth:` key belongs to the compromised client without recomputing all hashes.
 
 **Step 3: Provision a new key for the client**
 ```bash

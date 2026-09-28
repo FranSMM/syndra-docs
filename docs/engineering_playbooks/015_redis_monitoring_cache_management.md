@@ -46,7 +46,7 @@ KEYS cache:*
 docker compose exec redis redis-cli --scan --pattern "cache:<client_hash>:*" | xargs docker compose exec -T redis redis-cli DEL
 ```
 
-**Full cache flush (use with caution — clears auth cache too, forcing re-authentication):**
+**Full cache flush (use with caution: clears auth cache too, forcing re-authentication):**
 ```redis
 FLUSHDB
 ```

@@ -18,4 +18,4 @@ All interactions use `aioredis` (async-native) to avoid blocking the FastAPI eve
 
 ## Consequences
 - **Positive:** Single operational dependency for all edge-state. Atomic operations (`INCR`) guarantee correctness under concurrent load. Memory overhead is minimal (~10MB for the expected client volume).
-- **Negative:** Redis becomes a critical path dependency — if it goes down, all authenticated requests fail. Mitigated by Docker's `restart: unless-stopped` policy.
+- **Negative:** Redis becomes a critical path dependency, if it goes down, all authenticated requests fail. Mitigated by Docker's `restart: unless-stopped` policy.

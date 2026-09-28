@@ -12,7 +12,7 @@ cd ~/syndra-deploy
 
 **Step 2: Execute the provisioning CLI**
 
-**Permanent key** (default — no expiration):
+**Permanent key** (default: no expiration):
 ```bash
 docker compose exec api python -m app.scripts.provision_client "Client_Name"
 ```

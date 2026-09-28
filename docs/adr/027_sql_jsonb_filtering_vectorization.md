@@ -5,7 +5,7 @@
 ## Context
 The `backfill_vectors.py` script was loading ALL Silver Layer articles into Python memory via `.all()`, then filtering out already-vectorized articles in a Python list comprehension by checking `raw.payload.get("is_vectorized", False)`. This meant PostgreSQL returned thousands of rows (including already-processed ones) just for Python to discard them.
 
-At current scale (~1,135 articles), memory impact was negligible (~5MB). However, this pattern would not survive growth: at 50,000 articles, ~250MB of RAM would be consumed by ORM objects destined to be discarded — wasteful in a container limited to 2.5GB that also hosts FinBERT and MiniLM models.
+At current scale (~1,135 articles), memory impact was negligible (~5MB). However, this pattern would not survive growth: at 50,000 articles, ~250MB of RAM would be consumed by ORM objects destined to be discarded, wasteful in a container limited to 2.5GB that also hosts FinBERT and MiniLM models.
 
 ## Decision
 Push the `is_vectorized` filter down to PostgreSQL using native JSONB operators (`payload['is_vectorized'].as_boolean()`), and replace the load-all-then-slice pattern with a `LIMIT`-based `while True` loop that processes fixed-size batches directly from the database.

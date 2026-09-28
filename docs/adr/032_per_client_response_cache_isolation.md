@@ -32,4 +32,4 @@ With the current client volume (<10 B2B clients), the memory and hit-rate penalt
 
 ## Consequences
 - **Positive:** System is multi-tenant safe from day one. Zero risk of cross-client data leakage regardless of future architectural changes.
-- **Negative:** Each new client starts with a cold cache. First request per ticker/limit combination incurs a PostgreSQL query. Mitigated by the 5-minute TTL — after the first request, subsequent ones are served from cache.
+- **Negative:** Each new client starts with a cold cache. First request per ticker/limit combination incurs a PostgreSQL query. Mitigated by the 5-minute TTL, after the first request, subsequent ones are served from cache.
