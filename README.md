@@ -1,6 +1,6 @@
-> ⚠️ **Note:** The actual codebase for Syndra is currently kept in a **private monorepo** as it is in active development.
+> ⚠️ **Note:** The actual codebase for Syndra is kept in a **private monorepo**.
 >
-> This public repository serves as the **Engineering & Architecture Log**. Here you will find the system architecture, ADRs (Architecture Decision Records), and troubleshooting logs that demonstrate my system design and problem-solving skills.
+> This public repository is the **Engineering & Architecture Log**: ADRs, playbooks and troubleshooting logs, plus the production infrastructure (`infra/`), the metrics module, the test suite and the benchmark scripts behind the empirical audit (`benchmarks/`).
 
 <p align="center">
   <img src="assets/public/syndra_data_engine_hero.png" alt="Syndra Logo" width="100%">

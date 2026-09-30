@@ -1,0 +1,59 @@
+# Prometheus scrape configuration.
+#
+# Versioned here for the same reason the Caddyfile is: what Prometheus records
+# is only meaningful if the rules that produced it are known. A config edited
+# in place on the VPS is a graph nobody can explain six months later.
+#
+# Mounted read-only at /etc/prometheus/prometheus.yml by infra/docker-compose.prod.yml.
+
+global:
+  # 15s is the Prometheus default and it is the right one here. Finer buys no
+  # resolution on numbers driven by an hourly pipeline; coarser would blur the
+  # request-latency histograms, which are the point of the exercise.
+  scrape_interval: 15s
+  # A scrape that takes longer than this is recorded as a failure. Well above
+  # the observed cost of serialising the registry, but low enough that a hung
+  # API shows up as `up == 0` rather than as a stalled scrape loop.
+  scrape_timeout: 10s
+
+  external_labels:
+    monitor: syndra
+    environment: production
+
+scrape_configs:
+  # The API, over Docker's internal network. The container name resolves inside
+  # syndra_net; this endpoint is not reachable from the internet, because Caddy
+  # returns 403 for /metrics (see infra/Caddyfile).
+  #
+  # This single target carries both halves: the HTTP histograms added by
+  # prometheus-fastapi-instrumentator and the domain gauges derived from
+  # Postgres in app/core/metrics.py.
+  - job_name: syndra_api
+    static_configs:
+      - targets: ["syndra_api:8000"]
+
+  # Per-container CPU and memory. The target that carries the FinBERT inference
+  # cost, which is a claim the dissertation makes and could not otherwise back.
+  - job_name: cadvisor
+    static_configs:
+      - targets: ["syndra_cadvisor:8080"]
+
+  # Host-level context behind the container numbers.
+  - job_name: node
+    static_configs:
+      - targets: ["syndra_node_exporter:9100"]
+
+  # Prometheus scraping itself. Free, and not optional: this is where TSDB disk
+  # usage and active series count come from, which are exactly the two numbers
+  # that go wrong quietly.
+  #
+  # Worth knowing before trimming anything else: measured on 09/09/2026, this
+  # job alone was 1101 of the 1257 active series: 88% of the database was
+  # Prometheus watching itself, against 156 for the whole of Syndra. Dropping
+  # its own HTTP handler histograms with metric_relabel_configs would cut about
+  # a third of the daily growth. Deliberately not done: with the size cap now at
+  # 10GB the storage argument is gone, and pre-emptively discarding metrics is
+  # how you find out in October that you threw away the one you needed.
+  - job_name: prometheus
+    static_configs:
+      - targets: ["localhost:9090"]

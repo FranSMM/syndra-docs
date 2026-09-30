@@ -1,0 +1,6 @@
+measurement,n,first_ms,median_ms,p25_ms,p75_ms,ci95_low_ms,ci95_high_ms
+python_empty,29,14,14,13,18,13,14
+import_scrapy,29,586,570,560,584,566,578
+import_sqlalchemy,29,393,413,402,428,405,423
+extraction_startup,29,731,748,733,759,737,754
+load_startup,29,613,636,618,644,623,641

@@ -1,0 +1,10 @@
+date: 2026-09-18T01:39:32+02:00
+repo_commit: 6fe2b1c
+dirty_tree: yes
+repetitions: 30
+image: ghcr.io/fransmm/syndra-etl:ef85c37
+cores: 2
+memory_mb: 3814
+python: 3.11.15
+scrapy: 2.18.0
+sqlalchemy: 2.0.52

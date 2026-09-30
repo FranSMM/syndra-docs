@@ -1,0 +1,361 @@
+name: syndra-data-engine
+
+# Docker's json-file driver keeps every line a container ever wrote, with no
+# limit by default. With an hourly pipeline and a per-request API log that is a
+# disk that fills itself in silence, and the failure surfaces months later as
+# Postgres unable to write. Capping at 3 files of 10MB bounds each container to
+# 30MB. Rotation discards history, which is the right trade here: container
+# logs are immediate diagnosis, while the history that matters lives in
+# Postgres, in docs/troubleshooting and in Prefect.
+x-logging: &default-logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+# Third-party images are pinned to an exact version and its digest. A floating
+# tag like postgres:15-alpine moved on its own during the 28/09/2026 deploy,
+# and prefect:3-latest could migrate prefect_db under the ETL metrics. To
+# upgrade, change the line on purpose: tag for humans, digest for Docker.
+services:
+  postgres:
+    image: postgres:15.19-alpine3.24@sha256:f7d23353e1b15400d22ebe31189f4d314b87a4c129cc400c8c2d8d4ca127bf81
+    container_name: syndra_postgres
+    logging: *default-logging
+    ports:
+      - "127.0.0.1:5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - syndra_pgdata:/var/lib/postgresql/data
+      - ./postgres-init.sh:/docker-entrypoint-initdb.d/postgres-init.sh
+    networks:
+      - syndra_net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  qdrant:
+    image: qdrant/qdrant:v1.17.0@sha256:f1c7272cdac52b38c1a0e89313922d940ba50afd90d593a1605dbbc214e66ffb
+    container_name: syndra_qdrant
+    logging: *default-logging
+    ports:
+      - "127.0.0.1:6333:6333"
+    volumes:
+      - syndra_qdrant_data:/qdrant/storage
+    networks:
+      - syndra_net
+    restart: unless-stopped
+
+  redis:
+    image: redis:7.4.11-alpine3.21@sha256:858f009f9709ce576febc734aa78b8f6d624b82571f9ddb6bda4377c833b3499
+    container_name: syndra_redis
+    logging: *default-logging
+    ports:
+      - "127.0.0.1:6379:6379"
+    networks:
+      - syndra_net
+    restart: unless-stopped
+    volumes:
+      - syndra_redis_data:/data
+
+  api:
+    # Pinned to the git SHA that built it, written into the VPS .env by
+    # deploy.sh. :latest is a mutable tag with no history behind it, so it can
+    # never be rolled back to; a SHA can. The :-latest default keeps compose
+    # resolving to something valid if the variable is ever missing, rather than
+    # failing on an empty image name.
+    image: ghcr.io/fransmm/syndra-etl:${ETL_TAG:-latest}
+    container_name: syndra_api
+    logging: *default-logging
+    # No host ports: Caddy is the only ingress. API is reachable
+    # only via Docker's internal syndra_net network.
+    env_file: .env
+    # One worker, not two. prometheus_client keeps its registry in the memory of
+    # the process that owns it, so with two workers a scrape lands on whichever
+    # one Uvicorn happens to hand it: the counters would be split across two
+    # independent histories and every graph drawn from them would be a lie.
+    # prometheus_client's multiprocess mode exists to solve exactly this, but it
+    # wants a shared directory, cleanup when a worker dies, and it degrades
+    # gauge semantics: real complexity to keep a worker that was never earning
+    # its place. The API is async and its only CPU-bound work already runs in a
+    # threadpool via asyncio.to_thread, so concurrency comes from the event
+    # loop, not from workers.
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+    networks:
+      - syndra_net
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+    deploy:
+      resources:
+        limits:
+          # Sized from measurement, in two steps. At 512M the cgroup had hit its
+          # ceiling 12833 times with one recorded oom_kill; the 314MB the
+          # container appeared to use was not its appetite but its footprint
+          # compressed by constant reclaim. Raising it to 768M revealed the real
+          # figure: 789MB of anonymous memory, 395MB + 394MB across the two
+          # uvicorn workers, each of which imports torch and
+          # sentence-transformers at module load: roughly 390MB before any
+          # model weights exist. /search/semantic then adds a MiniLM copy per
+          # worker on first use.
+          #
+          # Dropping to one worker (see the command above) halves that: the
+          # expected resident set is now ~390MB plus one MiniLM copy instead of
+          # two of each.
+          #
+          # The cap stays at 1.25G anyway. A limit is a ceiling, not a
+          # reservation: lowering it frees nothing for the other containers,
+          # it only moves the point at which the OOM killer intervenes. The
+          # memory actually released by the second worker is real and available
+          # regardless. Re-measure with `docker stats` and memory.peak after a
+          # week of traffic before tightening this.
+          memory: 1.25G
+
+  prefect_server:
+    image: prefecthq/prefect:3.8.6-python3.12@sha256:ec9e58deaf30002dd65ebb755ca3d9eb5f169902882abf18c79261a4aa95bfe3
+    container_name: syndra_prefect_server
+    logging: *default-logging
+    command: ["prefect", "server", "start", "--host", "0.0.0.0", "--port", "4200"]
+    env_file: .env
+    environment:
+      - PREFECT_API_URL=http://127.0.0.1:4200/api
+    ports:
+      - "127.0.0.1:4200:4200"
+    networks:
+      - syndra_net
+    restart: unless-stopped
+    # Required by the scheduler's depends_on below, which waits for healthy
+    # rather than started. Without a healthcheck here that condition cannot be
+    # satisfied and compose refuses to start the scheduler at all: the two are
+    # a pair and must be edited as one.
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import sys,urllib.request; sys.exit(0 if urllib.request.urlopen('http://localhost:4200/api/health',timeout=4).status==200 else 1)\""]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 30s
+    depends_on:
+      postgres:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+
+  scheduler:
+    # Same image and therefore the same tag as the API: they are one build.
+    image: ghcr.io/fransmm/syndra-etl:${ETL_TAG:-latest}
+    container_name: syndra_scheduler
+    logging: *default-logging
+    env_file: .env
+    environment:
+      - PREFECT_API_URL=http://prefect_server:4200/api
+    command: ["python", "-m", "app.pipeline"]
+    networks:
+      - syndra_net
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      prefect_server:
+        condition: service_healthy
+      qdrant:
+        condition: service_started
+    deploy:
+      resources:
+        limits:
+          memory: 2.5G
+
+  demo:
+    image: ghcr.io/fransmm/syndra-demo:${DEMO_TAG:-latest}
+    container_name: syndra_demo
+    logging: *default-logging
+    # No host ports: Caddy is the only ingress, same as the API.
+    networks:
+      - syndra_net
+    restart: unless-stopped
+    volumes:
+      # Read-only so the container can read the demo key but never rewrite its
+      # own configuration. The file is 0600 and owned by uid 1000 on the host,
+      # which is why the image runs as uid 1000 too.
+      - ./streamlit-secrets.toml:/app/.streamlit/secrets.toml:ro
+    deploy:
+      resources:
+        limits:
+          # This is the only unauthenticated, public entry point on the box.
+          # A hard cap means a runaway demo is killed by its own cgroup instead
+          # of taking the API down with it. Streamlit with pandas/plotly and no
+          # torch sits around 200M.
+          memory: 384M
+    # Deliberately NOT depending on api: the demo must still serve its page and
+    # explain itself if the API is down, rather than refusing to start.
+
+  # Per-container CPU and memory. This is the one that answers the question the
+  # dissertation actually asks: "what does FinBERT inference cost per batch" is
+  # a question about syndra_scheduler, not about the machine, and it is the
+  # half of this that cannot be recovered later: nothing anywhere has been
+  # recording it.
+  cadvisor:
+    # gcr.io, not google/cadvisor on Docker Hub: that mirror stopped at v0.33.0
+    # in 2019 and is not the same project any more.
+    image: gcr.io/cadvisor/cadvisor:v0.55.1@sha256:3de2bd5203120b866d74a9b283b2ffb8ec382fbf9dc321814700c6ea6f44ec57
+    container_name: syndra_cadvisor
+    logging: *default-logging
+    command:
+      # cAdvisor's defaults are written for a Kubernetes node, not a 2-vCPU box.
+      # Left alone it re-reads every cgroup once a second and exports a metric
+      # per CPU core per container; the flags below are what keep it from
+      # costing more CPU than the pipeline it is measuring.
+      - "--docker_only=true"
+      - "--housekeeping_interval=15s"
+      - "--store_container_labels=false"
+      # Dropped because each multiplies series without answering anything here:
+      # percpu splits every counter by core, and the rest describe kernel
+      # subsystems this workload never touches.
+      - "--disable_metrics=percpu,sched,tcp,udp,hugetlb,referenced_memory,cpu_topology,resctrl,advtcp,memory_numa,process"
+    privileged: true
+    devices:
+      - /dev/kmsg
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:ro
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+      - /dev/disk/:/dev/disk:ro
+    networks:
+      - syndra_net
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          # Measured right after the first deploy: memory.current sits at 254MB
+          # of 256MB and memory.events shows thousands of `max` hits. That reads
+          # exactly like the API before its OOM, and it is not the same thing.
+          # The breakdown says so: anon is 8.4MB. Almost the entire resident set
+          # is kernel page cache and slab from walking /sys/fs/cgroup, /proc and
+          # the Docker layer tree: reclaimable, which is why oom_kill stays 0
+          # while the cgroup happily reclaims under its own ceiling.
+          #
+          # So the number to size against is 8MB of heap, not 254MB of cache,
+          # and raising the cap would only let it cache more of the same. Left
+          # at 256M deliberately. If this ever does get OOM-killed, check `anon`
+          # first: only a rise there is a real leak.
+          memory: 256M
+
+  # Host-level context: memory pressure, disk, load. Cheap, and it is what
+  # explains *why* a container behaved the way cAdvisor says it did.
+  node_exporter:
+    image: prom/node-exporter:v1.12.1@sha256:1b4e4438faca4dd7e001dd445d161a4a2091b0fededa84093b3a8dfeae1f1be0
+    container_name: syndra_node_exporter
+    logging: *default-logging
+    command:
+      - "--path.procfs=/host/proc"
+      - "--path.sysfs=/host/sys"
+      - "--path.rootfs=/host"
+      # Without this it reports a filesystem line for every Docker overlay
+      # mount: dozens of series describing layers nobody can act on.
+      - "--collector.filesystem.mount-points-exclude=^/(sys|proc|dev|host|etc)($$|/)"
+    pid: host
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/host:ro,rslave
+    networks:
+      - syndra_net
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+
+  prometheus:
+    image: prom/prometheus:v3.14.0@sha256:5ce7540c3c00ef4ab0c9d2c995c6a5b9c421f44b4a115d97a2c7af3b1c21cbb0
+    container_name: syndra_prometheus
+    logging: *default-logging
+    # Bound to loopback, not to 0.0.0.0. Prometheus ships no authentication of
+    # its own and its UI would happily tell the internet every route, latency
+    # and business volume it has collected. Reached the same way as Prefect on
+    # 4200: `ssh -L 9090:localhost:9090 syndra`. Caddy never proxies it, so no
+    # new surface is exposed.
+    ports:
+      - "127.0.0.1:9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - syndra_prometheus_data:/prometheus
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      # Two retention limits, and they are not redundant. Time is the one that
+      # serves the dissertation: 180 days from today covers the defence with
+      # room to spare. Size is the one that protects the box: the documented
+      # failure from the internship was a Prometheus with no size cap filling
+      # the disk.
+      #
+      # The size cap was 2GB, sized from a published rule of thumb that assumed
+      # ~100 series. Measured after 34h of real collection: 1257 series, 18.1MB
+      # on disk, ~12.8MB/day. That projects to ~2.3GB over the retention window,
+      # so the guardrail would have quietly become the binding limit around day
+      # 150 and started deleting the earliest history: the history this exists
+      # to keep.
+      #
+      # 10GB is sized for the worst case worth planning for: cAdvisor and
+      # node_exporter together should land somewhere near 3000 series, which is
+      # ~35MB/day and ~6.3GB over 180 days. That puts time back in charge, which
+      # is the whole point of having both limits. The disk is 75GB with 49GB
+      # free, so a 10GB ceiling still cannot fill it.
+      #
+      # Re-measure the real rate a week after this deploys and tighten if the
+      # projection was pessimistic. Do not tighten it by guessing.
+      - "--storage.tsdb.retention.time=180d"
+      - "--storage.tsdb.retention.size=10GB"
+    networks:
+      - syndra_net
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          # Prometheus holds the last ~2h of every series in memory (the head
+          # block). With this few series that is small; the cap is here so a
+          # cardinality mistake kills the monitoring instead of the API.
+          memory: 384M
+    # Deliberately no depends_on: Prometheus must start and record `up == 0`
+    # when the API is down. Waiting for the API would blind it exactly when
+    # there is something to see.
+
+  caddy:
+    image: caddy:2.11.4-alpine@sha256:6aeddd44c3078b0f9a35206472a11420648a79c184603ef95957d0a20044cb2b
+    container_name: syndra_caddy
+    logging: *default-logging
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - syndra_caddy_data:/data
+      - syndra_caddy_config:/config
+    networks:
+      - syndra_net
+    restart: unless-stopped
+    depends_on:
+      - api
+
+networks:
+  syndra_net:
+    driver: bridge
+
+volumes:
+  syndra_pgdata:
+  syndra_qdrant_data:
+  syndra_redis_data:
+  syndra_prometheus_data:
+  syndra_caddy_data:
+  syndra_caddy_config:
