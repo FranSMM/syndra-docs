@@ -2,52 +2,33 @@
 # Experiment 01: startup cost of the extraction and load subprocesses.
 # Read-only: imports and `scrapy list`, no network and no writes.
 set -euo pipefail
-
 cd "$(dirname "$0")"
-ROOT="$(git rev-parse --show-toplevel 2>/dev/null || echo ../..)"
-
-# The target comes from the root .env, which is not in git: the VPS address is
-# never written into a tracked file. To measure elsewhere, export HOST.
-read_env() { grep -E "^$1=" "$ROOT/.env" 2>/dev/null | tail -1 | cut -d= -f2- | tr -d "\"' \r"; }
-HOST="${HOST:-$(read_env VPS_USER)@$(read_env VPS_IP)}"
-if [[ ! "$HOST" =~ ^[^@]+@[^@]+$ ]]; then
-  echo "VPS_USER or VPS_IP missing from $ROOT/.env, or export HOST=user@machine." >&2
-  exit 1
-fi
+source ../lib/common.sh
 
 CONTAINER="${CONTAINER:-syndra_scheduler}"
 REPS="${REPS:-30}"
 
 mkdir -p results
-STAMP="$(date +%Y%m%d_%H%M%S)"
+STAMP="$(new_stamp)"
 CSV="results/startup_${STAMP}.csv"
 ENVIRONMENT="results/startup_${STAMP}_environment.txt"
 
+write_environment_header "$ENVIRONMENT"
 {
-  echo "date: $(date -Iseconds)"
-  echo "repo_commit: $(git rev-parse --short HEAD 2>/dev/null || echo unknown)"
-
-  # With uncommitted changes the commit above does not identify the measured code.
-  # Record the Git revision and working-tree state to identify the code used
-  # for this measurement. The commit alone is not enough when local changes
-  # are uncommitted, so dirty_tree makes those changes explicit.
-  echo "dirty_tree: $(test -n "$(git status --porcelain 2>/dev/null)" && echo yes || echo no)"
-
-  echo "repetitions: ${REPS}"
-  
-  ssh "$HOST" "
-    echo image: \$(docker inspect -f '{{.Config.Image}}' ${CONTAINER})
+  echo "repetitions: $REPS"
+  vps "
+    echo image: \$(docker inspect -f '{{.Config.Image}}' $CONTAINER)
     echo cores: \$(nproc)
     echo memory_mb: \$(free -m | awk '/Mem:/{print \$2}')
-    docker exec ${CONTAINER} python -c 'import sys, scrapy, sqlalchemy; print(\"python:\", sys.version.split()[0]); print(\"scrapy:\", scrapy.__version__); print(\"sqlalchemy:\", sqlalchemy.__version__)'
+    docker exec $CONTAINER python -c 'import sys, scrapy, sqlalchemy; print(\"python:\", sys.version.split()[0]); print(\"scrapy:\", scrapy.__version__); print(\"sqlalchemy:\", sqlalchemy.__version__)'
   "
-} > "$ENVIRONMENT"
+} >> "$ENVIRONMENT"
 
 echo "measurement,repetition,ms" > "$CSV"
-ssh "$HOST" "docker exec -i ${CONTAINER} python -" >> "$CSV" <<PY
+vps "docker exec -i $CONTAINER python -" >> "$CSV" <<PY
 import subprocess, time
 
-REPS = ${REPS}
+REPS = $REPS
 MEASUREMENTS = [
     ("python_empty",       ["python", "-c", "pass"],                          "/code"),
     ("import_scrapy",      ["python", "-c", "import scrapy"],                 "/code"),

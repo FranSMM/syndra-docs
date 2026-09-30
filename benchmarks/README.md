@@ -1,19 +1,16 @@
 # Benchmarks
 
-Reproducible experiments backing the figures of Chapter 4 of the dissertation.
-Each folder is a self-contained experiment following the same template:
-`README.md` (question, environment, how to run), `measure.sh` (takes the measurements and stores the raw data), `analyze.py` (statistics from the CSV) and `results/` (raw CSVs and environment metadata).
+Reproducible experiments backing the figures of Chapter 4 of the dissertation. Each folder is a self-contained experiment following the same template: `README.md` (question, environment, how to run), `measure.sh` (takes the measurements and stores the raw data), `analyze.py` (statistics from the CSV) and `results/` (raw CSVs and environment metadata).
 
 ## Index
 
-| # | Experiment | Question | Status |
-|---|---|---|---|
-| 01 | [Subprocess startup](./01_subprocess_startup/) | How much of the per-source time is startup and how much is actual work? | Measured |
-| 02 | [ETL latency](./02_etl_latency/) | How is end-to-end latency split across the four stages, and how did it evolve? | Pending |
-| 03 | [JSONB and GIN](./03_jsonb_gin/) | What does the GIN index on `raw_articles.payload` buy, and from what volume on? | Pending |
-| 04 | [API load](./04_api_load/) | From what request rate does the API degrade with a single worker? | Pending |
-| 05 | [Inference resources](./05_inference_resources/) | How much CPU and memory does FinBERT use per batch, and where is the ceiling? | Pending |
-| 06 | [API latency](./06_api_latency/) | How long does a request take under the load of one client, with the cache warm and cold? | Ready, not run |
+| # | Experiment | Question | Runs against | Status |
+|---|---|---|---|---|
+| 01 | [Subprocess startup](./01_subprocess_startup/) | How much of the per-source time is startup and how much is actual work? | production, read-only | Measured |
+| 02 | [ETL latency](./02_etl_latency/) | How is latency split across the stages, how did it evolve, and how much does each feed add? | production history, read-only | Ready |
+| 03 | [Per-ticker query indexes](./03_jsonb_gin/) | Which index does the per-ticker query need, from what size, and is the Bronze GIN of ADR 012 still used? | local copy of production data | Ready |
+| 04 | [Inference resources](./04_inference_resources/) | How do time and memory of FinBERT change from one text at a time to batches? | local, deployed image | Ready |
+| 05 | [API latency](./05_api_latency/) | How long does a request take under the load of one client, with the cache warm and cold? | production, 0.4 requests/s | Ready, needs a test key |
 
 ## Rules
 
@@ -21,11 +18,20 @@ Each folder is a self-contained experiment following the same template:
 2. **Every run records its own environment:** date, repository commit, container image, cores, memory and library versions.
 3. **A CSV is never edited by hand.** If a data point is wrong, measure again.
 4. **Fixed seed** in anything involving randomness, such as bootstrap resampling.
-5. **Fixed repetition count, 30.** The first one is reported separately because of the cache effect: the first import pays for the disk read that later ones find in the page cache.
+5. **Fixed repetition count, 30.** The first one is reported separately because of the cache effect: the first import pays for the disk read that later ones find in the page cache. Where an experiment cannot follow this rule (02 uses every recorded run; 05 measures hundreds of requests per run), its README says why.
 6. **Whatever is quoted in the dissertation lives in the repository**, and the dissertation cites the exact commit. If the environment file says `dirty_tree: yes`, that commit does not identify the measured code and the run cannot be quoted.
 
-No machine address is written into these files: the SSH target comes from
-`VPS_USER` and `VPS_IP` in the root `.env`, which is not in git.
+No machine address or credential is written into these files: the SSH target comes from `VPS_USER` and `VPS_IP` in the root `.env`, which is not in git, and API keys are passed through the environment or a git-ignored file. Copies of production data (03 and 04) hold scraped article text, so they live in `~/.cache/syndra-bench/` and never in the repository. Every query against production runs in a session forced read-only.
+
+## Shared code
+
+`lib/` holds what the experiments share, so each `measure.sh` and `analyze.py` only says what is particular to its experiment:
+
+- `common.sh`: reading `.env`, SSH and read-only `psql` against the VPS, the environment header, and a checksum-verified vegeta.
+- `stats.py`: nearest-rank percentiles and bootstrap intervals, standard library only.
+- `api_targets.py` and `vegeta_csv.py`: the request lists of the API latency experiment and the conversion of vegeta's output into the benchmark CSV.
+
+**Not measured:** the API's capacity, the request rate at which it degrades. Measuring it means pushing the API until it fails, which on the production VPS would break the service and share the two cores with the ETL; it needs a clone of the VPS and is left as future work.
 
 ## How this maps to the dissertation
 

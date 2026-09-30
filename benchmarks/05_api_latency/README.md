@@ -1,8 +1,8 @@
-# 06 · API latency at the load of one client
+# 05 - API latency at the load of one client
 
 **Question:** how long does the API take to answer a request under normal use, with the cache warm and with the cache cold?
 
-**Why it is separate from 04:** this is latency, not capacity. At 0.4 requests/s it stays well under the 100 requests/min per-key limit and adds the load of a single user, so it can run against production. Finding the point where the API degrades is experiment 04 and needs its own environment.
+**Why latency and not capacity:** at 0.4 requests/s the experiment stays well under the 100 requests/min per-key limit and adds the load of a single user, so it can run against production. Finding the rate at which the API degrades would mean pushing it until it fails, which cannot be done on the production VPS without breaking the service; it would need a clone of the VPS and is left as future work.
 
 **What is measured:** end-to-end latency from the client, through Cloudflare and Caddy to the API and back. It is what a customer sees, so it depends on where the client runs: record it in `CLIENT_LABEL`.
 
@@ -19,8 +19,8 @@ Every ticker in `tickers.txt` has at least 20 articles, the endpoint's default `
 
 **Setup, once:**
 
-1. Create a dedicated API key for the benchmark. Never use the demo key: its limit is shared and the demo would get 429s during the run.
-2. `export SYNDRA_BENCH_KEY=...` in the shell. The key is passed as a header and never written to disk.
+1. Create a dedicated API key for the benchmark, as a trial so it expires on its own: `docker exec syndra_api python -m app.scripts.provision_client benchmark_latency --trial 2` on the VPS. Never use the demo key: its limit is shared and the demo would get 429s during the run.
+2. Add `SYNDRA_BENCH_KEY=<the raw key>` to the root `.env`, which git ignores. Exporting it in the shell works too, for a single session. The script passes it as a request header and never writes it to the results.
 
 **Run** (from WSL):
 
