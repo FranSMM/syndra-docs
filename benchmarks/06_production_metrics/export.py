@@ -137,6 +137,24 @@ def storage(start, end):
     write_wide({c: by_label(q, "", start, end, step) for c, q in queries.items()})
 
 
+def cpu(start, end):
+    # CPU seconds per 15-minute block: per container, and for the whole host by
+    # mode. increase() is taken per series before summing, so a container
+    # recreated by a deploy does not look like a counter reset.
+    step = 900
+    sources = {
+        **by_label(f"sum by (name) (increase(container_cpu_usage_seconds_total{{{CONTAINERS}}}[15m]))",
+                   "name", start, end, step),
+        **{f"host_{mode}": points for mode, points in
+           by_label("sum by (mode) (increase(node_cpu_seconds_total[15m]))", "mode", start, end, step).items()},
+    }
+    writer = csv.writer(sys.stdout)
+    writer.writerow(["source", "timestamp", "cpu_seconds"])
+    for source, points in sorted(sources.items()):
+        for t, v in sorted(points.items()):
+            writer.writerow([source, t, format_value(v)])
+
+
 def scheduler(start, end):
     # At the scrape interval, to see the shape of each ETL peak.
     step = 15
@@ -183,5 +201,5 @@ if __name__ == "__main__":
     elif dataset == "latency":
         latency(args)
     else:
-        {"containers": containers, "host": host, "storage": storage,
+        {"containers": containers, "host": host, "storage": storage, "cpu": cpu,
          "scheduler": scheduler}[dataset](int(args[0]), int(args[1]))

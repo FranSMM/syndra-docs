@@ -62,6 +62,7 @@ SQL
 echo "-> containers";  export_dataset containers "$START" "$END" > "${PREFIX}_containers.csv"
 echo "-> host";        export_dataset host "$START" "$END" > "${PREFIX}_host.csv"
 echo "-> storage";     export_dataset storage "$START" "$END" > "${PREFIX}_storage.csv"
+echo "-> cpu";         export_dataset cpu "$START" "$END" > "${PREFIX}_cpu.csv"
 echo "-> scheduler";   export_dataset scheduler "$SCHEDULER_START" "$END" > "${PREFIX}_scheduler.csv"
 echo "-> series";      export_dataset series > "${PREFIX}_series.csv"
 # When each ETL run really happened, to tell its CPU and memory from the rest.

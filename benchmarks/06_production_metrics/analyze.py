@@ -260,6 +260,52 @@ def scheduler(rows, etl_runs, full_period_peak, inference_summary):
         emit("3-scheduler", "experiment_04", "rss_after_model_load", production["load_rss_mb"], "MiB")
 
 
+# Question 5: what keeps the CPU busy outside the ETL.
+
+OBSERVABILITY = {"syndra_cadvisor", "syndra_node_exporter", "syndra_prometheus"}
+# Modes in which the host is running code; iowait is waiting and steal is time
+# the hypervisor gave to other machines, both outside our control.
+RUNNING_MODES = ("user", "system", "nice", "irq", "softirq")
+BLOCK_S = 900
+
+
+def idle_cpu(rows, etl_runs, cores):
+    blocks = defaultdict(dict)
+    for row in rows:
+        blocks[int(row["timestamp"])][row["source"]] = float(row["cpu_seconds"])
+    # A block stamped t covers the 15 minutes before it. Blocks that touch an
+    # ETL run, or that predate cAdvisor, are left out.
+    quiet = {t: v for t, v in blocks.items()
+             if "syndra_cadvisor" in v and not overlaps_run(t - BLOCK_S, t, etl_runs)}
+    capacity = BLOCK_S * cores
+
+    def report(subject, values, note=""):
+        values = sorted(100 * v / capacity for v in values)
+        emit("5-cpu", subject, "median", f"{stats.percentile(values, 50):.2f}", f"% of {cores:g} cores{note}")
+        emit("5-cpu", subject, "p95", f"{stats.percentile(values, 95):.2f}", f"% of {cores:g} cores")
+
+    emit("5-cpu", "blocks", "count", len(quiet), "15-minute blocks without an ETL run")
+    names = sorted({s for v in quiet.values() for s in v if not s.startswith("host_")})
+    for name in names:
+        report(name, [v[name] for v in quiet.values() if name in v])
+
+    def total(block, names_in):
+        return sum(block.get(n, 0) for n in names_in)
+
+    containers_all = [total(v, names) for v in quiet.values()]
+    report("group_observability", [total(v, OBSERVABILITY) for v in quiet.values()], ", cadvisor + node_exporter + prometheus")
+    report("group_syndra", [total(v, set(names) - OBSERVABILITY) for v in quiet.values()], ", every other container")
+    report("all_containers", containers_all)
+    running = [total(v, [f"host_{m}" for m in RUNNING_MODES]) for v in quiet.values()]
+    report("host_running", running, ", user + system + nice + irq + softirq")
+    # Docker, containerd, the kernel and anything else outside a container.
+    report("host_outside_containers", [r - c for r, c in zip(running, containers_all)])
+    report("host_steal", [v.get("host_steal", 0) for v in quiet.values()], ", taken by the hypervisor")
+    report("host_iowait", [v.get("host_iowait", 0) for v in quiet.values()], ", waiting for disk")
+    report("host_busy", [sum(x for k, x in v.items() if k.startswith("host_") and k != "host_idle")
+                         for v in quiet.values()], ", every mode but idle, as in question 1")
+
+
 # Question 4: size of the observability data.
 
 def tsdb(rows, series_rows):
@@ -317,6 +363,8 @@ def main(prefix):
         server_latency(read_csv(f"{prefix}_latency.csv"), sibling("latency_client_summary"))
     scheduler(read_csv(f"{prefix}_scheduler.csv"), etl_runs, full_period_peak, sibling("inference_summary"))
     tsdb(read_csv(f"{prefix}_storage.csv"), read_csv(f"{prefix}_series.csv"))
+    if Path(f"{prefix}_cpu.csv").exists():
+        idle_cpu(read_csv(f"{prefix}_cpu.csv"), etl_runs, float(environment["host_cores"]))
 
 
 if __name__ == "__main__":

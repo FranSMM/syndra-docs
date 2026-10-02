@@ -1,5 +1,5 @@
-date: 2026-10-02T16:22:18+02:00
-repo_commit: e5c21d1
+date: 2026-10-02T17:12:16+02:00
+repo_commit: 3211ce5
 dirty_tree: yes
 prometheus_version: 3.14.0
 cadvisor_version: v0.55.1
@@ -12,7 +12,7 @@ first_sample_cadvisor: 2026-09-10T13:00:10Z
 first_sample_node: 2026-09-10T13:00:10Z
 first_sample_prometheus: 2026-09-07T18:00:10Z
 first_sample_syndra_api: 2026-09-07T18:00:10Z
-period: 2026-09-07T17:15:00Z to 2026-10-02T14:15:00Z
+period: 2026-09-07T17:15:00Z to 2026-10-02T15:00:00Z
 scheduler_detail_days: 7
 latency_windows_from: ../05_api_latency/results/latency_20260930_192504_environment.txt
 latency_client_summary: ../05_api_latency/results/latency_20260930_192504_summary.csv
@@ -32,5 +32,5 @@ container_state: syndra_qdrant restarts=0 started=2026-09-28T21:58:21.207121726Z
 container_state: syndra_demo restarts=0 started=2026-09-28T20:11:59.509959361Z oom_killed=false
 docker_disk: Images: 24.44GB (3.364GB (13%) reclaimable)
 docker_disk: Containers: 243.8MB (0B (0%) reclaimable)
-docker_disk: Local Volumes: 1.339GB (0B (0%) reclaimable)
+docker_disk: Local Volumes: 1.327GB (0B (0%) reclaimable)
 docker_disk: Build Cache: 0B (0B reclaimable)

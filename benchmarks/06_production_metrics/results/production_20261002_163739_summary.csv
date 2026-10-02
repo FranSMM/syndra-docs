@@ -83,7 +83,7 @@ question,subject,metric,value,unit
 1-starts,2026-09-28T20:11Z,containers_started,api caddy demo postgres prefect_server redis scheduler,
 1-starts,2026-09-28T21:58Z,containers_started,api caddy cadvisor node_exporter postgres prefect_server prometheus qdrant redis scheduler,
 1-starts,2026-09-28T22:15Z,containers_started,prefect_server,
-1-host,cpu,samples,31795,1-minute averages
+1-host,cpu,samples,31810,1-minute averages
 1-host,cpu,busy_median,17.9,% of 2 cores
 1-host,cpu,busy_p95,22.1,% of 2 cores
 1-host,cpu,busy_max,94.7,% of 2 cores

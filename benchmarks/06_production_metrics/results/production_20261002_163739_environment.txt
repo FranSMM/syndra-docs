@@ -1,0 +1,36 @@
+date: 2026-10-02T16:37:40+02:00
+repo_commit: 3211ce5
+dirty_tree: no
+prometheus_version: 3.14.0
+cadvisor_version: v0.55.1
+node_exporter_version: 1.12.1
+retention: 180d or 10GiB
+scrape_interval: 15s
+host_cores: 2
+host_memory_bytes: 3999698944
+first_sample_cadvisor: 2026-09-10T13:00:10Z
+first_sample_node: 2026-09-10T13:00:10Z
+first_sample_prometheus: 2026-09-07T18:00:10Z
+first_sample_syndra_api: 2026-09-07T18:00:10Z
+period: 2026-09-07T17:15:00Z to 2026-10-02T14:30:00Z
+scheduler_detail_days: 7
+latency_windows_from: ../05_api_latency/results/latency_20260930_192504_environment.txt
+latency_client_summary: ../05_api_latency/results/latency_20260930_192504_summary.csv
+inference_summary: ../04_inference_resources/results/inference_20260930_163046_summary.csv
+etl_schedule: syndra-hourly-deployment {"interval": 3600.0, "timezone": "UTC", "anchor_date": "2026-09-28T21:58:40.190229Z"}
+# Current containers: restarts since creation, start, and whether the last exit was an OOM kill.
+container_state: syndra_prefect_server restarts=0 started=2026-09-28T22:15:37.469502107Z oom_killed=false
+container_state: syndra_scheduler restarts=0 started=2026-09-28T21:58:37.950923367Z oom_killed=false
+container_state: syndra_caddy restarts=0 started=2026-09-28T21:58:31.836336138Z oom_killed=false
+container_state: syndra_api restarts=0 started=2026-09-28T21:58:31.682836924Z oom_killed=false
+container_state: syndra_cadvisor restarts=0 started=2026-09-28T21:58:21.20531163Z oom_killed=false
+container_state: syndra_postgres restarts=0 started=2026-09-28T21:58:21.18796781Z oom_killed=false
+container_state: syndra_node_exporter restarts=0 started=2026-09-28T21:58:21.204264097Z oom_killed=false
+container_state: syndra_prometheus restarts=0 started=2026-09-28T21:58:21.195205861Z oom_killed=false
+container_state: syndra_redis restarts=0 started=2026-09-28T21:58:21.211505768Z oom_killed=false
+container_state: syndra_qdrant restarts=0 started=2026-09-28T21:58:21.207121726Z oom_killed=false
+container_state: syndra_demo restarts=0 started=2026-09-28T20:11:59.509959361Z oom_killed=false
+docker_disk: Images: 24.44GB (3.364GB (13%) reclaimable)
+docker_disk: Containers: 243.8MB (0B (0%) reclaimable)
+docker_disk: Local Volumes: 1.34GB (0B (0%) reclaimable)
+docker_disk: Build Cache: 0B (0B reclaimable)

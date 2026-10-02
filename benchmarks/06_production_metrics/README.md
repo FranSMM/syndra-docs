@@ -6,6 +6,7 @@
 2. How long do the requests of experiment 05 take inside the API, and so how much of the client latency is network?
 3. How does the scheduler's memory during the ETL compare with FinBERT alone in experiment 04?
 4. How big is the Prometheus TSDB, how fast does it grow, and does the 180-day retention fit under the 10 GiB size cap?
+5. Outside the ETL, what keeps the CPU busy: each container, the observability stack against Syndra itself, and the host outside any container?
 
 **What is read:** the history that Prometheus, cAdvisor and node_exporter already collect in production, plus the ETL run times in `prefect_db`. Nothing is measured anew and nothing is written on the VPS: `export.py` travels to the server through stdin and only sends GET requests to the Prometheus API on 127.0.0.1, and the `prefect_db` session is forced read-only.
 
@@ -23,12 +24,15 @@ By default the latency windows come from the newest run of 05 and the comparison
 | `_containers.csv` | Per container: peak working set and RSS, memory limit, start time, OOM counter | 15 min, peaks kept with `max_over_time` |
 | `_host.csv` | Raw CPU counters and lowest available memory | 1 min |
 | `_storage.csv` | Root filesystem, TSDB blocks and WAL, head series, host boot time | 1 h |
+| `_cpu.csv` | CPU seconds per container, and for the host per mode (user, system, iowait, steal...) | 15 min |
 | `_scheduler.csv` | Scheduler working set and RSS | 15 s, last 7 days |
 | `_etl_runs.csv` | Start and end of every ETL run, from `prefect_db` | per run |
 | `_latency.csv` | Request and histogram counters at both ends of each 05 window | per window |
 | `_series.csv` | Active series per scrape job | now |
 
 **Which memory figure:** two are reported. The working set is what the kernel weighs before an OOM kill, and it includes the page cache in active use, such as model files just read. RSS is process memory only, the same quantity as the `VmHWM` that experiment 04 reports, so the comparison with 04 uses RSS. Both are in MiB, like 04.
+
+**CPU at rest:** a 15-minute block that touches an ETL run is left out, so what remains is the load the system carries between runs, API traffic included. The host's busy time is split by mode: the time spent running code, iowait (waiting for the disk) and steal (time the hypervisor gave to other virtual machines). Running time minus the sum of the containers is what runs outside any container, such as Docker itself and the kernel. Container CPU comes from `increase()`, which extrapolates to the edges of each block, so the figures carry an error of a few per cent.
 
 **Recreated containers:** every deploy recreates containers, and cAdvisor gives each new container a new series. Series are merged by container name with `max()`; reading only one series would miss part of the history.
 

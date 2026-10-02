@@ -7,11 +7,12 @@ Reproducible experiments backing the figures of Chapter 4 of the dissertation. E
 | # | Experiment | Question | Runs against | Status |
 |---|---|---|---|---|
 | 01 | [Subprocess startup](./01_subprocess_startup/) | How much of the per-source time is startup and how much is actual work? | production, read-only | Measured |
-| 02 | [ETL latency](./02_etl_latency/) | How is latency split across the stages, how did it evolve, and how much does each feed add? | production history, read-only | Ready |
-| 03 | [Per-ticker query indexes](./03_jsonb_gin/) | Which index does the per-ticker query need, from what size, and is the Bronze GIN of ADR 012 still used? | local copy of production data | Ready |
-| 04 | [Inference resources](./04_inference_resources/) | How do time and memory of FinBERT change from one text at a time to batches? | local, deployed image | Ready |
-| 05 | [API latency](./05_api_latency/) | How long does a request take under the load of one client, with the cache warm and cold? | production, 0.4 requests/s | Ready, needs a test key |
-| 06 | [Production metrics](./06_production_metrics/) | How much memory, CPU and disk does production use against its limits, how much of the 05 latency is network, and how fast does the TSDB grow? | production history, read-only | Measured |
+| 02 | [ETL latency](./02_etl_latency/) | How is latency split across the stages, how did it evolve, and how much does each feed add? | production history, read-only | Measured |
+| 03 | [Per-ticker query indexes](./03_jsonb_gin/) | Which index does the per-ticker query need, from what size, and is the Bronze GIN of ADR 012 still used? | local copy of production data | Measured |
+| 04 | [Inference resources](./04_inference_resources/) | How do time and memory of FinBERT change from one text at a time to batches? | local, deployed image | Measured |
+| 05 | [API latency](./05_api_latency/) | How long does a request take under the load of one client, with the cache warm and cold? | production, 0.4 requests/s | Measured, needs a test key |
+| 06 | [Production metrics](./06_production_metrics/) | How much memory, CPU and disk does production use against its limits, how much of the 05 latency is network, how fast does the TSDB grow, and what keeps the CPU busy at rest? | production history, read-only | Measured |
+| 07 | [Cost of the ML stages](./07_ml_stage_cost/) | Why do the ML stages barely grow with the number of articles: what is fixed per run and what is per article? | production history and scheduler, read-only | Measured |
 
 ## Rules
 

@@ -37,6 +37,14 @@ def ci95_percentiles(values, ps, rng, resamples=RESAMPLES):
     return {p: _interval(estimates[p]) for p in ps}
 
 
+def ci95_each(values, statistic, rng, resamples=RESAMPLES):
+    """Bootstrap intervals for a statistic that returns several estimates at
+    once, such as the two coefficients of a fit, sharing each resample."""
+    n = len(values)
+    draws = [statistic(rng.choices(values, k=n)) for _ in range(resamples)]
+    return [_interval([draw[i] for draw in draws]) for i in range(len(draws[0]))]
+
+
 def ci95_difference(a, b, statistic, rng, resamples=RESAMPLES):
     """Bootstrap interval of statistic(b) - statistic(a), resampling each group."""
     na, nb = len(a), len(b)
