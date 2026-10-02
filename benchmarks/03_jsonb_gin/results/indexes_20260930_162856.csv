@@ -1,0 +1,17 @@
+size,table_rows,variant,index,build_ms,size_bytes
+10000,10000,gin,bench_tickers_gin,10.2,139264
+10000,10000,order_index,bench_published_desc,9.1,237568
+10000,10000,gin_and_order,bench_tickers_gin,9.7,139264
+10000,10000,gin_and_order,bench_published_desc,8.3,237568
+25000,25000,gin,bench_tickers_gin,36.3,262144
+25000,25000,order_index,bench_published_desc,16.4,557056
+25000,25000,gin_and_order,bench_tickers_gin,18.8,262144
+25000,25000,gin_and_order,bench_published_desc,18.3,557056
+50000,50000,gin,bench_tickers_gin,33.8,385024
+50000,50000,order_index,bench_published_desc,28.5,1105920
+50000,50000,gin_and_order,bench_tickers_gin,32.5,385024
+50000,50000,gin_and_order,bench_published_desc,27.6,1105920
+all,74300,gin,bench_tickers_gin,45.2,483328
+all,74300,order_index,bench_published_desc,37.3,1630208
+all,74300,gin_and_order,bench_tickers_gin,45.3,483328
+all,74300,gin_and_order,bench_published_desc,29.8,1630208

@@ -1,0 +1,1441 @@
+size,table_rows,variant,ticker_class,ticker,matches,rep,execution_ms,planning_ms,shared_hit,shared_read,plan
+10000,10000,baseline,common,NVDA,167,1,2.568,2.131,581,176,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,2,1.812,2.182,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,3,1.838,2.109,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,4,1.977,2.403,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,5,1.872,2.153,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,6,1.956,2.338,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,7,1.769,2.104,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,8,1.805,2.168,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,9,1.872,2.191,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,10,1.892,2.278,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,11,1.836,2.277,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,12,1.804,2.411,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,13,1.809,2.158,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,14,1.864,2.428,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,15,1.903,2.293,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,16,1.882,2.180,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,17,1.897,2.418,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,18,2.012,2.384,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,19,1.963,2.663,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,20,2.346,2.353,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,21,1.793,2.300,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,22,1.818,2.209,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,23,1.848,2.230,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,24,1.973,2.170,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,25,1.858,2.134,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,26,1.915,2.140,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,27,2.031,2.261,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,28,1.913,2.390,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,29,1.933,2.225,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,common,NVDA,167,30,1.839,2.317,757,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,1,1.616,2.099,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,2,1.737,2.161,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,3,1.477,2.170,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,4,1.438,2.338,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,5,1.408,2.142,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,6,1.453,2.157,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,7,1.543,2.196,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,8,1.556,2.190,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,9,1.553,2.087,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,10,1.480,2.219,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,11,1.522,2.208,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,12,1.449,2.236,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,13,1.395,2.569,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,14,1.483,2.235,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,15,1.541,2.144,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,16,1.435,2.413,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,17,1.411,2.368,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,18,1.693,2.200,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,19,1.404,2.177,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,20,1.452,2.199,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,21,1.643,2.146,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,22,1.570,2.189,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,23,1.472,2.143,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,24,1.583,2.158,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,25,1.427,2.240,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,26,1.558,2.265,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,27,1.533,2.230,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,28,1.584,2.017,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,29,1.416,2.157,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,rare,ZNTL,1,30,1.519,2.276,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,1,2.026,2.141,427,54,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,2,1.978,2.333,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,3,1.633,2.204,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,4,1.714,2.280,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,5,1.697,2.258,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,6,1.847,2.392,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,7,1.689,2.302,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,8,1.692,2.247,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,9,1.742,2.237,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,10,1.939,2.129,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,11,1.661,2.299,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,12,1.685,2.159,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,13,1.660,2.174,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,14,1.636,2.226,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,15,1.633,2.378,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,16,1.642,2.168,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,17,1.673,2.269,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,18,1.921,2.378,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,19,1.755,2.262,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,20,1.894,2.121,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,21,1.723,2.410,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,22,1.741,2.539,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,23,1.801,2.338,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,24,1.644,2.251,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,25,1.604,2.158,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,26,1.806,2.195,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,27,1.737,2.209,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,28,1.680,2.381,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,29,1.696,2.563,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,baseline,typical,MS,75,30,2.002,2.300,481,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,1,0.699,2.746,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,2,0.666,2.371,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,3,0.709,2.453,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,4,0.769,2.415,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,5,0.663,2.511,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,6,0.694,2.599,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,7,0.674,2.437,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,8,0.677,2.448,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,9,0.713,2.530,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,10,0.696,2.377,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,11,0.736,2.434,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,12,0.766,2.614,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,13,0.673,2.461,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,14,0.667,2.608,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,15,0.724,2.349,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,16,0.745,2.561,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,17,0.670,2.651,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,18,0.667,2.516,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,19,0.657,2.429,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,20,0.704,2.665,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,21,0.665,2.434,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,22,0.684,2.427,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,23,0.682,2.520,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,24,0.688,2.380,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,25,0.788,2.788,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,26,0.754,2.436,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,27,0.674,2.468,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,28,0.682,2.325,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,29,0.686,2.404,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,common,NVDA,167,30,0.747,2.390,631,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,1,0.112,2.317,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,2,0.142,2.748,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,3,0.183,2.506,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,4,0.116,2.398,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,5,0.118,2.676,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,6,0.117,2.475,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,7,0.116,2.460,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,8,0.112,2.346,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,9,0.118,2.492,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,10,0.117,2.424,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,11,0.118,2.609,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,12,0.121,2.511,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,13,0.119,2.432,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,14,0.118,2.549,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,15,0.113,2.272,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,16,0.115,2.390,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,17,0.115,2.560,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,18,0.122,3.180,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,19,0.120,2.692,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,20,0.119,2.675,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,21,0.120,2.357,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,22,0.118,2.404,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,23,0.116,2.383,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,24,0.118,2.476,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,25,0.121,2.680,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,26,0.117,2.399,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,27,0.159,2.454,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,28,0.118,2.445,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,29,0.121,2.495,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,rare,ZNTL,1,30,0.116,2.407,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,1,0.448,2.531,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,2,0.447,2.398,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,3,0.479,2.560,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,4,0.461,2.659,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,5,0.463,2.378,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,6,0.432,2.316,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,7,0.452,2.519,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,8,0.448,2.532,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,9,0.470,2.437,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,10,0.461,2.462,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,11,0.472,2.468,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,12,0.446,2.623,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,13,0.450,2.426,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,14,0.445,2.434,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,15,0.450,2.472,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,16,0.523,2.437,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,17,0.486,2.427,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,18,0.452,2.543,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,19,0.578,2.484,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,20,0.443,2.667,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,21,0.462,2.539,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,22,0.441,2.386,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,23,0.429,2.314,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,24,0.491,2.521,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,25,0.449,2.381,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,26,0.449,2.494,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,27,0.451,2.368,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,28,0.515,2.497,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,29,0.474,2.633,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin,typical,MS,75,30,0.441,2.354,289,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,1,0.708,2.296,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,2,0.779,2.323,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,3,0.703,2.443,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,4,0.717,2.259,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,5,0.685,2.214,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,6,0.675,2.354,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,7,0.678,2.194,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,8,0.677,2.194,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,9,0.678,2.232,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,10,0.680,2.305,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,11,0.730,2.275,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,12,0.706,2.194,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,13,0.674,2.416,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,14,0.697,2.216,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,15,0.689,2.193,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,16,0.677,2.274,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,17,0.678,2.359,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,18,0.678,2.245,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,19,0.673,2.532,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,20,0.746,2.207,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,21,0.719,2.232,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,22,0.694,2.271,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,23,0.675,2.258,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,24,0.787,2.226,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,25,0.683,2.458,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,26,0.721,2.246,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,27,0.676,2.192,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,28,0.727,2.740,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,29,0.698,2.304,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,common,NVDA,167,30,0.724,2.293,841,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,1,1.390,2.202,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,2,1.470,2.219,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,3,1.405,2.257,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,4,1.624,2.316,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,5,1.395,2.281,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,6,1.454,2.227,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,7,1.484,2.271,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,8,1.457,2.298,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,9,1.508,2.295,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,10,1.401,2.177,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,11,1.492,2.185,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,12,1.394,2.241,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,13,1.493,2.209,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,14,1.395,2.466,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,15,1.494,2.191,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,16,1.390,2.340,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,17,1.427,2.243,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,18,1.392,2.414,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,19,1.608,2.239,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,20,1.421,2.209,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,21,1.405,2.323,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,22,1.394,2.196,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,23,1.393,2.333,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,24,1.499,2.654,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,25,1.400,2.450,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,26,1.393,2.279,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,27,1.440,2.333,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,28,1.393,2.483,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,29,1.409,2.229,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,rare,ZNTL,1,30,1.498,2.270,259,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,1,1.479,2.193,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,2,1.315,2.454,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,3,1.340,2.304,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,4,1.336,2.420,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,5,1.369,2.331,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,6,1.414,2.238,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,7,1.353,2.362,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,8,1.346,2.306,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,9,1.496,2.219,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,10,1.319,2.193,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,11,1.382,2.256,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,12,1.345,2.198,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,13,1.344,2.435,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,14,1.344,2.253,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,15,1.396,2.199,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,16,1.328,2.209,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,17,1.338,2.292,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,18,1.329,2.339,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,19,1.345,2.234,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,20,1.335,2.208,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,21,1.354,2.355,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,22,1.349,2.256,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,23,1.334,2.370,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,24,1.331,2.175,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,25,1.336,2.422,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,26,1.333,2.213,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,27,1.439,2.217,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,28,1.340,2.249,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,29,1.333,2.224,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,order_index,typical,MS,75,30,1.370,3.117,1773,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,1,0.781,2.589,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,2,0.822,2.438,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,3,0.868,2.555,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,4,0.798,2.627,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,5,0.774,2.469,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,6,0.918,2.672,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,7,0.829,2.798,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,8,0.795,2.599,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,9,0.800,2.782,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,10,0.783,2.687,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,11,0.775,2.439,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,12,0.859,2.570,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,13,0.779,2.651,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,14,0.790,2.402,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,15,0.780,2.438,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,16,0.776,2.743,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,17,0.827,2.591,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,18,0.854,2.499,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,19,0.779,2.647,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,20,0.844,2.554,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,21,0.781,2.464,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,22,0.844,2.417,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,23,0.787,2.638,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,24,1.005,2.596,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,25,0.829,2.617,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,26,0.780,2.689,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,27,0.792,2.436,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,28,0.776,2.671,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,29,0.776,2.636,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,common,NVDA,167,30,0.783,2.616,844,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,1,0.187,2.529,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,2,0.121,2.466,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,3,0.118,2.457,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,4,0.168,2.401,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,5,0.118,2.661,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,6,0.123,2.776,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,7,0.125,2.503,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,8,0.155,2.556,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,9,0.119,2.797,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,10,0.135,2.443,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,11,0.120,2.615,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,12,0.122,2.534,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,13,0.115,2.523,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,14,0.120,2.628,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,15,0.123,2.458,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,16,0.117,2.438,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,17,0.117,2.464,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,18,0.117,2.436,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,19,0.124,2.676,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,20,0.117,2.450,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,21,0.197,3.054,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,22,0.220,3.221,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,23,0.173,2.761,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,24,0.301,3.149,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,25,0.197,3.031,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,26,0.124,2.676,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,27,0.125,2.684,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,28,0.195,2.500,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,29,0.152,2.560,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,rare,ZNTL,1,30,0.158,2.674,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,1,2.068,2.386,1767,9,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,2,1.531,2.705,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,3,1.525,2.497,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,4,1.680,2.842,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,5,1.515,2.515,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,6,1.624,2.503,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,7,1.532,2.619,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,8,1.595,2.464,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,9,1.630,2.510,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,10,1.523,2.409,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,11,2.067,2.455,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,12,1.536,2.560,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,13,1.521,2.440,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,14,1.594,2.512,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,15,1.537,2.474,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,16,1.556,2.441,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,17,1.531,2.600,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,18,1.771,2.510,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,19,1.525,2.499,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,20,1.683,2.666,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,21,1.911,2.582,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,22,1.569,2.458,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,23,1.530,2.708,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,24,1.528,2.545,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,25,1.698,2.441,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,26,1.560,2.457,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,27,1.546,2.537,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,28,1.563,2.464,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,29,1.620,2.433,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+10000,10000,gin_and_order,typical,MS,75,30,1.522,2.556,1776,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,1,6.776,2.326,1851,339,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,2,4.620,2.289,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,3,4.746,2.167,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,4,4.578,2.169,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,5,4.548,2.206,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,6,4.910,2.270,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,7,5.018,2.298,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,8,4.660,2.194,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,9,4.477,2.414,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,10,4.695,2.305,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,11,4.575,2.155,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,12,4.340,2.421,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,13,4.505,2.151,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,14,4.628,2.279,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,15,4.479,2.255,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,16,4.551,2.384,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,17,4.645,2.241,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,18,4.654,2.223,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,19,4.560,2.143,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,20,4.490,2.255,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,21,4.483,2.341,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,22,4.570,2.345,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,23,4.597,2.236,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,24,4.882,2.217,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,25,4.697,2.213,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,26,4.532,2.183,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,27,4.545,2.338,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,28,4.603,2.211,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,29,4.940,2.224,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,common,NVDA,520,30,4.570,2.397,2190,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,1,3.370,2.199,632,1,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,2,3.434,2.336,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,3,3.364,2.157,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,4,3.375,2.302,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,5,3.450,2.276,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,6,3.458,2.174,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,7,3.472,2.430,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,8,3.453,2.178,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,9,3.414,2.258,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,10,3.503,2.174,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,11,3.541,2.346,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,12,3.445,2.195,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,13,3.374,2.677,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,14,3.479,2.174,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,15,3.491,2.146,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,16,3.820,2.338,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,17,3.417,2.145,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,18,3.627,2.144,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,19,3.451,2.277,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,20,3.455,2.148,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,21,3.327,2.435,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,22,3.517,2.198,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,23,3.681,2.171,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,24,3.500,2.212,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,25,3.348,2.208,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,26,3.423,2.184,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,27,3.334,2.268,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,28,3.353,2.214,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,29,3.430,2.252,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,rare,ZVIA,1,30,3.505,2.217,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,1,3.938,2.142,786,45,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,2,4.070,2.139,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,3,3.636,2.223,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,4,3.711,2.175,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,5,3.674,2.156,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,6,3.686,2.160,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,7,3.801,2.360,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,8,3.781,2.164,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,9,3.715,2.321,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,10,3.934,2.321,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,11,3.611,2.238,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,12,3.684,2.238,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,13,3.519,2.319,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,14,3.723,2.249,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,15,4.294,2.369,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,16,3.715,2.210,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,17,3.713,2.164,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,18,3.653,2.239,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,19,3.625,2.262,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,20,3.686,2.543,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,21,3.848,2.200,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,22,3.633,2.466,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,23,3.714,2.362,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,24,3.741,2.790,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,25,3.894,2.387,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,26,3.738,2.334,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,27,3.649,2.443,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,28,3.741,2.374,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,29,3.628,2.405,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,baseline,typical,NOW,67,30,4.035,2.376,831,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,gin,common,NVDA,520,1,12.028,2.624,5678,1402,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,2,7.554,2.649,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,3,7.467,2.695,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,4,7.354,2.764,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,5,7.347,2.681,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,6,7.708,2.723,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,7,7.554,2.577,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,8,7.407,2.651,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,9,7.371,2.696,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,10,7.881,3.234,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,11,7.229,2.737,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,12,7.301,2.790,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,13,7.727,2.740,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,14,7.353,2.734,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,15,7.371,2.634,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,16,7.330,2.644,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,17,7.241,2.741,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,18,7.425,2.601,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,19,7.341,2.692,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,20,7.381,2.774,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,21,7.786,2.533,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,22,7.507,2.602,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,23,7.330,2.586,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,24,7.394,2.630,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,25,7.562,2.603,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,26,8.634,2.965,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,27,7.191,3.063,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,28,7.461,2.670,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,29,7.297,2.724,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,common,NVDA,520,30,7.286,2.634,7080,0,Index Scan ix_raw_articles_id; Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin
+25000,25000,gin,rare,ZVIA,1,1,0.107,2.569,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,2,0.108,2.692,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,3,0.108,2.599,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,4,0.109,2.828,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,5,0.110,2.649,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,6,0.108,2.747,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,7,0.107,2.611,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,8,0.109,2.669,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,9,0.150,2.558,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,10,0.109,2.815,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,11,0.108,2.659,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,12,0.109,2.649,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,13,0.108,2.745,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,14,0.111,2.566,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,15,0.112,2.817,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,16,0.107,2.857,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,17,0.107,2.626,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,18,0.130,2.596,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,19,0.107,2.848,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,20,0.124,2.586,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,21,0.109,2.715,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,22,0.108,2.629,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,23,0.106,2.769,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,24,0.117,2.737,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,25,0.107,2.588,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,26,0.114,2.963,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,27,0.106,2.889,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,28,0.107,2.584,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,29,0.112,2.698,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,rare,ZVIA,1,30,0.106,2.545,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,1,0.584,2.734,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,2,0.534,2.630,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,3,0.601,2.673,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,4,0.535,2.698,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,5,0.514,2.805,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,6,0.539,2.668,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,7,0.630,3.159,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,8,0.512,2.608,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,9,0.571,2.586,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,10,0.559,2.636,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,11,0.522,3.031,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,12,0.520,2.649,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,13,0.576,2.638,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,14,0.656,2.703,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,15,0.515,2.785,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,16,0.521,2.628,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,17,0.516,2.637,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,18,0.518,2.815,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,19,0.625,2.840,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,20,0.518,2.613,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,21,0.519,2.748,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,22,0.521,2.738,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,23,0.518,2.574,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,24,0.540,2.602,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,25,0.564,2.999,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,26,0.821,2.679,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,27,0.525,2.773,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,28,0.536,2.728,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,29,0.585,2.964,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin,typical,NOW,67,30,0.527,2.735,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,1,0.466,2.459,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,2,0.639,2.487,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,3,0.474,3.123,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,4,0.466,2.546,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,5,0.467,2.620,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,6,0.536,2.550,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,7,0.482,2.724,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,8,0.474,2.412,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,9,0.481,2.690,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,10,0.464,2.409,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,11,0.469,2.663,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,12,0.503,2.767,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,13,0.466,2.483,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,14,0.469,2.651,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,15,0.466,2.585,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,16,0.508,2.726,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,17,0.473,2.557,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,18,0.466,2.614,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,19,0.468,2.467,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,20,0.568,2.665,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,21,0.479,2.559,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,22,0.470,2.433,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,23,0.502,2.614,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,24,0.474,2.767,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,25,0.468,2.608,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,26,0.557,2.636,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,27,0.466,2.490,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,28,0.482,2.466,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,29,0.542,2.636,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,common,NVDA,520,30,0.494,2.828,597,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,1,3.696,2.577,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,2,3.462,2.580,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,3,3.637,2.505,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,4,3.522,2.363,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,5,3.507,2.632,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,6,3.645,2.593,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,7,3.935,2.440,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,8,3.719,2.507,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,9,3.564,2.592,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,10,3.716,3.066,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,11,3.623,2.721,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,12,3.571,2.631,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,13,3.484,2.636,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,14,3.454,2.760,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,15,3.680,2.507,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,16,3.472,2.736,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,17,3.720,2.491,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,18,3.461,2.473,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,19,3.542,2.766,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,20,3.738,2.504,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,21,3.627,2.440,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,22,3.535,2.468,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,23,3.526,2.551,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,24,3.440,2.419,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,25,3.779,2.541,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,26,3.770,2.496,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,27,3.662,2.783,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,28,3.569,2.791,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,29,3.669,2.450,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,rare,ZVIA,1,30,3.506,2.676,633,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,1,3.690,2.458,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,2,3.727,2.604,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,3,3.827,2.513,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,4,3.661,2.473,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,5,3.619,2.482,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,6,3.599,2.615,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,7,3.835,2.419,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,8,3.638,2.567,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,9,3.778,2.711,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,10,3.745,2.416,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,11,3.776,2.558,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,12,3.853,2.440,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,13,3.718,2.439,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,14,3.602,2.677,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,15,3.791,2.435,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,16,3.714,2.523,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,17,3.601,2.477,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,18,3.747,2.924,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,19,3.743,2.565,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,20,3.584,2.594,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,21,3.682,2.625,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,22,3.965,2.553,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,23,3.687,2.626,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,24,3.807,2.496,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,25,3.738,2.637,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,26,3.826,2.500,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,27,3.734,2.486,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,28,3.670,2.647,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,29,3.956,2.591,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,order_index,typical,NOW,67,30,3.820,2.643,5012,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,1,0.620,3.013,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,2,0.580,3.041,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,3,0.557,2.695,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,4,0.562,3.010,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,5,0.560,2.774,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,6,0.564,2.816,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,7,0.562,2.974,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,8,0.561,2.776,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,9,0.548,2.781,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,10,0.587,2.772,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,11,0.579,3.022,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,12,0.582,2.949,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,13,0.576,3.096,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,14,0.585,2.958,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,15,0.588,2.800,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,16,0.704,2.889,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,17,0.653,2.968,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,18,0.611,3.502,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,19,0.580,2.918,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,20,0.577,2.909,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,21,0.646,3.616,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,22,0.610,2.975,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,23,0.593,3.222,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,24,0.631,3.214,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,25,0.580,3.061,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,26,0.576,3.001,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,27,0.653,2.918,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,28,0.579,3.100,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,29,0.561,2.928,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,common,NVDA,520,30,0.562,2.939,600,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,1,0.109,2.847,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,2,0.108,2.932,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,3,0.105,2.795,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,4,0.104,2.733,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,5,0.112,2.769,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,6,0.112,2.962,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,7,0.113,2.812,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,8,0.111,2.899,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,9,0.113,2.956,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,10,0.117,2.890,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,11,0.105,2.773,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,12,0.109,2.889,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,13,0.106,2.793,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,14,0.108,2.826,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,15,0.106,2.984,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,16,0.162,3.511,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,17,0.111,3.127,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,18,0.109,2.837,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,19,0.106,2.769,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,20,0.109,2.815,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,21,0.106,2.867,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,22,0.105,2.773,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,23,0.113,2.848,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,24,0.109,2.745,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,25,0.134,2.984,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,26,0.108,3.184,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,27,0.106,2.853,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,28,0.105,2.793,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,29,0.107,2.822,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,rare,ZVIA,1,30,0.114,2.959,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,1,0.534,2.985,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,2,0.536,2.818,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,3,0.543,2.933,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,4,0.538,2.916,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,5,0.559,2.905,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,6,0.557,2.865,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,7,0.539,2.822,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,8,0.537,2.842,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,9,0.563,2.858,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,10,0.545,2.821,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,11,0.529,2.778,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,12,0.534,2.878,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,13,0.528,2.869,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,14,0.529,2.866,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,15,0.527,2.824,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,16,0.533,2.736,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,17,0.520,2.711,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,18,0.529,2.871,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,19,0.558,2.801,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,20,0.561,3.430,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,21,0.676,2.856,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,22,0.529,2.724,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,23,0.628,3.014,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,24,0.541,2.890,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,25,0.563,2.723,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,26,0.527,2.809,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,27,0.576,2.672,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,28,0.543,2.691,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,29,0.529,2.910,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+25000,25000,gin_and_order,typical,NOW,67,30,0.527,2.843,271,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,1,7.369,2.395,1416,4,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,2,7.008,2.392,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,3,6.804,2.547,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,4,6.650,2.496,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,5,6.746,2.362,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,6,6.723,2.484,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,7,6.882,2.437,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,8,6.953,2.453,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,9,6.849,2.579,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,10,6.795,2.552,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,11,6.757,2.678,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,12,6.965,2.346,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,13,6.959,2.369,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,14,6.847,2.341,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,15,6.975,2.371,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,16,7.127,2.346,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,17,6.737,2.438,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,18,6.967,2.405,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,19,7.008,2.415,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,20,7.109,2.395,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,21,7.084,2.351,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,22,7.048,2.331,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,23,7.117,2.363,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,24,7.129,2.507,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,25,6.938,2.420,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,26,7.624,2.490,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,27,7.200,2.473,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,28,7.163,2.404,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,29,7.004,2.489,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,common,NVDA,1069,30,6.928,2.480,1420,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,1,7.089,2.527,1266,1,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,2,7.001,2.439,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,3,8.282,2.911,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,4,8.366,2.779,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,5,8.406,2.802,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,6,8.150,2.770,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,7,8.679,2.913,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,8,8.068,3.018,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,9,8.090,3.046,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,10,8.018,3.043,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,11,8.163,3.211,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,12,9.044,2.879,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,13,8.269,2.809,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,14,8.493,2.884,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,15,8.224,2.787,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,16,8.192,2.948,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,17,8.225,2.913,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,18,8.172,2.855,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,19,8.043,2.777,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,20,8.545,2.944,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,21,8.276,2.853,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,22,8.158,2.888,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,23,8.263,2.833,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,24,8.164,2.899,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,25,8.448,2.816,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,26,8.272,2.779,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,27,8.137,2.896,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,28,8.013,2.913,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,29,8.430,3.096,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,rare,ZURA,1,30,8.254,2.905,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,1,8.786,2.882,1441,45,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,2,8.614,2.941,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,3,9.213,2.884,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,4,8.570,2.888,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,5,8.584,2.865,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,6,8.650,3.145,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,7,8.433,2.918,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,8,8.370,2.831,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,9,9.492,2.879,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,10,8.757,2.874,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,11,8.515,2.957,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,12,8.766,2.840,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,13,8.799,2.761,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,14,9.255,2.868,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,15,8.698,3.069,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,16,7.944,2.782,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,17,8.011,2.753,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,18,7.888,2.692,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,19,8.247,2.875,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,20,7.819,2.704,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,21,7.913,2.619,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,22,7.826,2.778,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,23,7.803,2.599,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,24,7.868,2.628,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,25,7.833,2.815,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,26,7.787,2.673,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,27,7.715,2.601,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,28,8.807,2.716,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,29,7.843,2.573,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,baseline,typical,MA,74,30,7.811,2.726,1486,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,1,8.703,3.064,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,2,8.701,2.837,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,3,8.926,2.977,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,4,9.373,3.053,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,5,9.052,3.030,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,6,9.320,3.019,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,7,9.587,2.899,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,8,10.158,3.355,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,9,10.000,3.103,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,10,9.608,3.188,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,11,9.418,3.212,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,12,9.819,3.307,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,13,9.421,3.078,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,14,9.053,3.044,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,15,9.319,3.066,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,16,8.874,3.093,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,17,8.840,2.983,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,18,8.896,2.948,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,19,10.414,3.122,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,20,9.790,3.302,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,21,9.629,3.299,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,22,9.297,3.256,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,23,9.376,3.209,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,24,9.635,3.165,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,25,9.296,3.095,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,26,9.116,3.010,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,27,9.407,3.114,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,28,9.887,2.942,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,29,8.828,2.928,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,common,NVDA,1069,30,8.873,2.931,1572,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,1,0.120,2.990,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,2,0.118,2.954,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,3,0.120,3.114,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,4,0.120,3.041,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,5,0.126,3.013,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,6,0.121,3.041,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,7,0.133,3.490,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,8,0.120,3.021,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,9,0.123,2.955,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,10,0.118,3.083,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,11,0.117,2.991,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,12,0.120,3.034,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,13,0.119,2.964,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,14,0.151,2.975,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,15,0.118,2.976,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,16,0.118,3.102,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,17,0.118,2.927,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,18,0.120,3.089,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,19,0.124,2.928,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,20,0.120,3.030,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,21,0.119,2.888,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,22,0.119,3.070,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,23,0.118,2.918,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,24,0.174,2.937,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,25,0.121,2.954,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,26,0.121,3.074,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,27,0.119,2.911,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,28,0.118,2.999,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,29,0.128,3.036,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,rare,ZURA,1,30,0.118,2.962,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,1,0.690,3.004,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,2,0.709,2.946,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,3,0.703,2.972,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,4,0.838,2.934,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,5,0.746,2.869,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,6,0.693,2.948,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,7,0.686,2.999,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,8,0.709,2.970,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,9,0.718,2.977,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,10,0.683,2.928,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,11,0.697,2.986,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,12,0.682,2.909,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,13,0.749,2.892,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,14,0.696,3.204,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,15,0.690,2.966,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,16,0.688,2.988,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,17,0.691,2.956,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,18,0.687,2.982,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,19,0.683,2.904,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,20,0.714,3.010,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,21,0.716,3.099,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,22,0.681,2.973,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,23,0.684,2.946,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,24,0.737,2.910,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,25,0.698,2.982,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,26,0.694,2.972,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,27,0.673,3.016,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,28,0.693,2.952,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,29,0.699,2.896,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin,typical,MA,74,30,0.680,2.872,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,1,0.501,2.792,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,2,0.499,2.652,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,3,0.501,2.820,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,4,0.501,2.717,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,5,0.497,2.779,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,6,0.519,2.919,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,7,0.506,2.780,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,8,0.509,2.757,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,9,0.502,2.768,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,10,0.650,2.717,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,11,0.499,2.719,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,12,0.494,2.618,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,13,0.529,2.871,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,14,0.507,2.701,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,15,0.511,2.789,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,16,0.560,2.739,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,17,0.507,2.740,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,18,0.584,2.802,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,19,0.506,2.764,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,20,0.544,2.887,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,21,0.516,2.857,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,22,0.519,2.762,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,23,0.507,2.793,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,24,0.594,2.780,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,25,0.512,2.698,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,26,0.505,2.795,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,27,0.510,2.857,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,28,0.526,2.795,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,29,0.509,2.754,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,common,NVDA,1069,30,0.539,2.760,582,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,1,7.517,2.805,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,2,7.722,2.732,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,3,7.551,2.874,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,4,7.447,2.757,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,5,7.203,2.888,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,6,7.276,2.682,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,7,7.303,2.693,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,8,7.499,2.835,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,9,7.721,2.965,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,10,7.635,2.883,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,11,7.433,2.762,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,12,7.386,2.804,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,13,7.411,2.794,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,14,7.411,2.802,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,15,7.301,2.845,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,16,7.374,2.802,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,17,7.209,2.753,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,18,7.396,2.784,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,19,7.465,2.745,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,20,7.694,2.841,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,21,7.534,2.750,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,22,7.528,2.753,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,23,7.446,2.732,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,24,7.456,2.851,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,25,7.518,2.735,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,26,7.210,2.960,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,27,7.368,2.878,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,28,7.220,2.926,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,29,7.630,2.994,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,rare,ZURA,1,30,7.506,3.232,1267,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,1,6.039,2.754,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,2,5.969,2.826,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,3,5.977,2.871,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,4,5.958,2.734,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,5,5.923,2.660,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,6,5.839,2.666,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,7,6.247,2.902,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,8,6.032,2.718,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,9,5.969,2.843,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,10,6.035,2.700,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,11,5.839,2.784,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,12,6.054,2.748,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,13,6.080,2.761,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,14,6.129,2.721,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,15,6.380,2.955,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,16,6.201,2.818,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,17,6.007,2.741,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,18,6.009,2.815,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,19,5.965,2.840,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,20,6.011,2.803,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,21,5.931,2.706,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,22,5.898,2.834,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,23,5.997,2.809,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,24,5.960,2.826,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,25,5.860,2.748,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,26,5.991,2.809,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,27,5.832,2.926,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,28,5.977,2.765,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,29,5.616,2.699,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,order_index,typical,MA,74,30,5.944,2.690,8443,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,1,0.569,3.077,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,2,0.568,2.969,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,3,0.571,3.067,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,4,0.585,2.935,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,5,0.594,2.908,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,6,0.684,2.953,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,7,0.571,3.041,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,8,0.572,3.018,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,9,0.565,2.949,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,10,0.636,2.867,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,11,0.573,3.373,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,12,0.583,3.139,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,13,0.599,3.130,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,14,0.577,3.022,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,15,0.585,3.006,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,16,0.605,2.980,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,17,0.587,2.984,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,18,0.583,3.005,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,19,0.585,3.048,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,20,0.581,2.975,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,21,0.571,3.061,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,22,0.573,3.151,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,23,0.566,2.910,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,24,0.595,3.004,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,25,0.638,2.855,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,26,0.571,3.159,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,27,0.622,2.959,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,28,0.574,2.955,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,29,0.566,2.893,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,common,NVDA,1069,30,0.570,3.047,585,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,1,0.118,3.087,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,2,0.117,2.966,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,3,0.114,2.995,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,4,0.114,2.915,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,5,0.123,3.116,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,6,0.122,2.952,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,7,0.116,2.970,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,8,0.117,2.967,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,9,0.117,3.023,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,10,0.119,3.050,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,11,0.117,3.138,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,12,0.115,2.911,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,13,0.114,2.877,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,14,0.117,2.983,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,15,0.113,2.967,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,16,0.115,3.039,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,17,0.119,2.924,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,18,0.181,3.039,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,19,0.117,3.098,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,20,0.116,3.030,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,21,0.115,2.932,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,22,0.114,2.938,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,23,0.115,3.046,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,24,0.120,3.046,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,25,0.113,2.897,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,26,0.117,3.072,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,27,0.116,3.034,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,28,0.125,3.061,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,29,0.123,3.801,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,rare,ZURA,1,30,0.117,3.220,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,1,0.719,3.134,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,2,0.693,3.029,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,3,0.689,3.065,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,4,0.718,3.149,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,5,0.715,3.028,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,6,0.733,3.087,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,7,0.689,2.998,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,8,0.704,3.199,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,9,0.700,3.047,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,10,0.752,2.994,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,11,0.695,3.227,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,12,0.716,2.977,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,13,0.704,3.143,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,14,0.703,3.093,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,15,0.724,3.015,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,16,0.693,3.013,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,17,0.709,3.051,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,18,0.721,3.067,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,19,0.713,3.295,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,20,0.691,3.170,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,21,0.716,3.063,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,22,0.731,3.092,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,23,0.727,3.220,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,24,0.718,3.159,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,25,0.721,3.273,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,26,0.731,3.178,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,27,0.710,3.055,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,28,0.717,3.174,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,29,0.710,3.161,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+50000,50000,gin_and_order,typical,MA,74,30,0.747,3.106,301,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,1,9.740,2.618,2028,5,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,2,9.716,2.738,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,3,9.358,2.861,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,4,9.633,2.597,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,5,9.832,2.591,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,6,9.748,2.639,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,7,9.383,2.755,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,8,9.870,2.894,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,9,9.539,2.680,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,10,9.518,2.650,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,11,9.617,2.564,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,12,9.653,3.168,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,13,9.499,2.652,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,14,9.585,2.595,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,15,9.793,2.611,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,16,10.027,2.743,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,17,10.223,2.699,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,18,9.790,2.647,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,19,10.072,2.695,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,20,9.908,2.762,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,21,9.617,2.671,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,22,9.652,2.672,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,23,9.852,2.766,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,24,9.851,2.739,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,25,10.162,2.616,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,26,9.604,2.626,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,27,9.608,2.751,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,28,10.496,2.605,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,29,9.581,2.602,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,common,NVDA,1847,30,10.010,2.726,2033,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,1,10.988,2.819,1879,1,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,2,11.214,2.750,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,3,11.073,2.693,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,4,11.068,2.829,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,5,11.041,2.697,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,6,10.975,2.679,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,7,11.131,2.688,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,8,10.939,2.778,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,9,10.882,2.726,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,10,11.383,2.770,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,11,11.168,2.654,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,12,11.098,2.757,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,13,10.952,2.748,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,14,11.367,2.580,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,15,11.099,2.995,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,16,10.981,2.680,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,17,10.854,2.627,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,18,11.284,2.843,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,19,11.307,2.824,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,20,11.227,2.694,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,21,11.001,2.745,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,22,11.301,2.668,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,23,11.141,2.638,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,24,11.113,2.648,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,25,11.029,2.693,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,26,11.300,2.750,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,27,11.241,2.811,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,28,11.229,2.713,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,29,11.163,2.731,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,rare,ZUMZ,1,30,11.077,2.878,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,1,12.046,2.679,2079,41,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,2,11.715,2.603,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,3,11.960,2.656,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,4,11.823,2.735,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,5,11.477,2.619,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,6,11.663,2.655,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,7,11.650,2.667,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,8,11.443,2.667,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,9,11.520,2.658,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,10,11.501,2.606,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,11,11.463,2.768,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,12,11.551,2.863,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,13,12.324,2.622,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,14,11.590,2.757,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,15,11.609,2.559,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,16,11.495,2.634,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,17,11.440,2.704,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,18,11.457,2.555,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,19,13.080,2.668,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,20,11.572,2.607,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,21,11.523,2.593,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,22,11.672,2.555,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,23,11.740,2.608,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,24,11.374,2.644,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,25,11.518,2.653,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,26,11.632,2.642,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,27,11.609,2.688,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,28,11.677,2.583,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,29,11.443,2.629,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,baseline,typical,MRNA,81,30,11.576,2.671,2120,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,1,5.004,2.936,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,2,4.954,3.074,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,3,5.141,2.970,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,4,5.179,3.897,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,5,5.097,2.945,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,6,5.457,2.870,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,7,5.268,2.876,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,8,5.910,3.208,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,9,5.135,2.932,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,10,5.244,3.061,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,11,5.142,3.069,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,12,5.087,3.008,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,13,5.553,2.949,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,14,5.082,2.899,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,15,5.228,3.037,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,16,5.180,2.960,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,17,5.166,2.929,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,18,5.001,2.754,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,19,5.017,2.894,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,20,5.057,2.946,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,21,5.641,2.939,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,22,6.823,3.060,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,23,5.273,2.902,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,24,5.261,2.866,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,25,5.288,2.946,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,26,5.165,3.156,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,27,5.263,3.028,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,28,5.144,3.099,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,29,5.187,3.060,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,common,NVDA,1847,30,5.192,2.957,1243,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,1,0.124,2.910,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,2,0.140,3.158,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,3,0.119,2.831,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,4,0.120,2.912,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,5,0.118,3.018,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,6,0.121,2.858,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,7,0.123,3.006,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,8,0.121,2.881,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,9,0.121,3.074,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,10,0.125,3.103,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,11,0.119,2.843,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,12,0.126,3.039,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,13,0.128,3.608,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,14,0.124,3.111,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,15,0.124,3.036,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,16,0.124,2.993,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,17,0.162,2.999,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,18,0.123,2.969,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,19,0.121,2.915,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,20,0.123,3.044,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,21,0.120,2.779,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,22,0.116,2.938,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,23,0.115,2.780,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,24,0.120,2.786,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,25,0.189,2.937,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,26,0.114,2.798,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,27,0.119,2.938,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,28,0.123,2.992,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,29,0.153,3.097,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,rare,ZUMZ,1,30,0.122,2.917,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,1,0.711,2.861,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,2,0.736,2.836,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,3,0.707,2.896,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,4,0.713,2.953,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,5,0.712,2.932,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,6,0.744,2.865,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,7,0.721,2.890,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,8,0.727,2.969,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,9,0.758,2.997,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,10,0.745,3.563,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,11,0.788,3.034,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,12,0.734,2.947,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,13,0.741,3.076,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,14,0.726,2.941,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,15,0.727,2.976,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,16,0.744,2.984,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,17,0.747,2.987,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,18,0.759,3.096,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,19,0.850,3.138,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,20,0.859,3.130,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,21,0.790,3.245,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,22,0.755,3.090,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,23,0.774,3.861,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,24,0.749,3.043,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,25,1.423,7.106,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,26,0.932,3.737,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,27,0.879,3.785,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,28,1.464,4.433,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,29,0.941,4.650,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin,typical,MRNA,81,30,0.997,3.953,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,1,0.717,3.114,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,2,0.605,3.163,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,3,0.579,3.145,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,4,0.569,3.062,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,5,0.566,3.073,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,6,0.537,2.743,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,7,0.589,2.947,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,8,0.570,3.060,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,9,0.576,3.290,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,10,0.573,2.785,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,11,0.547,2.943,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,12,0.570,2.844,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,13,0.549,3.012,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,14,0.608,3.102,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,15,0.564,2.849,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,16,0.599,2.768,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,17,0.537,2.776,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,18,0.571,2.937,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,19,0.551,2.960,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,20,0.565,4.133,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,21,0.534,2.966,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,22,0.601,2.895,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,23,0.554,2.828,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,24,0.575,3.007,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,25,0.572,3.088,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,26,0.574,3.032,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,27,0.591,3.013,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,28,0.575,3.175,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,29,0.556,3.510,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,common,NVDA,1847,30,0.616,3.023,690,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,1,11.815,2.870,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,2,11.366,2.847,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,3,12.052,3.094,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,4,11.398,2.935,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,5,11.280,2.999,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,6,11.149,2.826,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,7,11.263,2.827,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,8,10.889,2.681,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,9,10.898,2.694,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,10,11.013,2.850,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,11,11.002,2.688,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,12,10.806,2.906,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,13,10.764,2.792,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,14,10.795,2.802,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,15,10.656,2.740,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,16,10.769,2.625,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,17,10.946,2.635,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,18,11.452,2.876,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,19,10.844,2.791,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,20,10.878,2.748,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,21,10.879,2.797,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,22,10.943,2.874,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,23,10.934,2.665,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,24,10.905,2.871,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,25,10.937,2.779,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,26,10.815,2.823,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,27,10.880,2.796,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,28,10.936,2.846,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,29,10.923,2.769,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,rare,ZUMZ,1,30,10.913,2.645,1880,0,Seq Scan bench_articles; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,1,3.802,2.787,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,2,3.823,2.731,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,3,3.811,2.754,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,4,3.829,2.852,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,5,3.988,2.875,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,6,3.755,3.239,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,7,3.754,2.722,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,8,3.758,2.791,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,9,3.721,2.821,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,10,3.756,2.973,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,11,3.796,2.737,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,12,3.777,2.746,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,13,3.832,2.806,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,14,3.745,2.761,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,15,3.708,2.756,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,16,3.762,2.729,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,17,3.706,2.762,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,18,3.839,2.839,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,19,3.859,2.923,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,20,3.736,2.673,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,21,3.778,2.734,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,22,3.830,2.891,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,23,4.160,2.936,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,24,3.922,3.087,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,25,3.923,2.957,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,26,3.830,2.780,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,27,3.873,2.822,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,28,3.761,2.846,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,29,3.794,2.813,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,order_index,typical,MRNA,81,30,3.910,2.688,5689,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,1,0.589,2.857,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,2,0.598,2.945,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,3,0.618,2.947,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,4,0.608,2.939,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,5,0.628,2.893,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,6,0.606,2.984,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,7,0.637,3.184,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,8,0.613,3.093,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,9,0.622,3.223,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,10,0.617,3.034,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,11,0.648,3.100,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,12,0.604,3.014,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,13,0.605,3.086,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,14,0.688,3.054,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,15,0.616,3.068,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,16,0.616,3.084,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,17,0.621,3.148,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,18,0.605,3.117,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,19,0.604,2.977,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,20,0.603,2.932,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,21,0.600,3.005,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,22,0.608,3.018,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,23,0.620,3.187,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,24,0.623,3.043,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,25,0.623,3.027,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,26,0.624,3.144,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,27,0.617,3.074,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,28,0.603,2.963,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,29,0.649,2.981,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,common,NVDA,1847,30,0.606,3.005,693,0,Index Scan bench_published_desc; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,1,0.119,3.024,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,2,0.124,3.235,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,3,0.122,3.092,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,4,0.120,3.043,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,5,0.119,3.057,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,6,0.122,2.969,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,7,0.130,3.154,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,8,0.134,3.301,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,9,0.127,3.300,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,10,0.132,3.319,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,11,0.197,3.453,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,12,0.142,3.402,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,13,0.137,3.367,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,14,0.168,6.750,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,15,0.262,4.693,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,16,0.339,5.045,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,17,0.229,4.542,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,18,0.211,4.524,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,19,0.204,4.353,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,20,0.364,4.624,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,21,0.164,3.794,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,22,0.229,3.416,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,23,0.137,3.536,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,24,0.132,3.347,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,25,0.145,3.482,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,26,0.149,4.145,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,27,0.154,4.045,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,28,0.166,3.536,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,29,0.134,3.498,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,rare,ZUMZ,1,30,0.135,3.363,10,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,1,1.912,3.800,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,2,0.866,3.776,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,3,0.854,3.545,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,4,0.895,5.631,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,5,0.965,3.757,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,6,0.914,4.057,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,7,0.925,3.914,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,8,0.921,3.591,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,9,0.870,4.064,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,10,0.912,3.738,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,11,0.871,3.806,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,12,0.846,3.579,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,13,0.913,3.994,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,14,0.771,3.132,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,15,0.812,3.183,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,16,0.926,3.116,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,17,0.868,3.357,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,18,0.798,3.769,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,19,0.920,3.291,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,20,1.006,4.335,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,21,0.864,3.785,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,22,0.808,3.836,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,23,0.808,3.272,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,24,0.793,3.258,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,25,0.801,3.300,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,26,0.896,3.297,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,27,0.756,3.261,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,28,0.856,3.148,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,29,0.781,3.170,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id
+all,74300,gin_and_order,typical,MRNA,81,30,0.816,3.190,320,0,Bitmap Heap Scan bench_articles; Bitmap Index Scan bench_tickers_gin; Index Scan ix_raw_articles_id

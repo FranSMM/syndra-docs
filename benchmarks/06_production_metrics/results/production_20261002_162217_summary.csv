@@ -1,0 +1,203 @@
+question,subject,metric,value,unit
+1-containers,syndra_api,peak_working_set,549,MiB
+1-containers,syndra_api,peak_working_set_at,2026-09-28T22:00Z,
+1-containers,syndra_api,peak_rss,395,MiB
+1-containers,syndra_api,limit,1280,MiB
+1-containers,syndra_api,peak_working_set_of_limit,42.9,%
+1-containers,syndra_api,oom_events,0,
+1-containers,syndra_api,starts_in_period,5,
+1-containers,syndra_caddy,peak_working_set,47,MiB
+1-containers,syndra_caddy,peak_working_set_at,2026-09-15T13:00Z,
+1-containers,syndra_caddy,peak_rss,17,MiB
+1-containers,syndra_caddy,limit,none,
+1-containers,syndra_caddy,peak_working_set_of_host,1.2,%
+1-containers,syndra_caddy,oom_events,0,
+1-containers,syndra_caddy,starts_in_period,2,
+1-containers,syndra_cadvisor,peak_working_set,256,MiB
+1-containers,syndra_cadvisor,peak_working_set_at,2026-09-27T23:00Z,
+1-containers,syndra_cadvisor,peak_rss,20,MiB
+1-containers,syndra_cadvisor,limit,256,MiB
+1-containers,syndra_cadvisor,peak_working_set_of_limit,100.0,%
+1-containers,syndra_cadvisor,oom_events,0,
+1-containers,syndra_cadvisor,starts_in_period,2,
+1-containers,syndra_demo,peak_working_set,180,MiB
+1-containers,syndra_demo,peak_working_set_at,2026-09-28T22:45Z,
+1-containers,syndra_demo,peak_rss,114,MiB
+1-containers,syndra_demo,limit,384,MiB
+1-containers,syndra_demo,peak_working_set_of_limit,47.0,%
+1-containers,syndra_demo,oom_events,0,
+1-containers,syndra_demo,starts_in_period,1,
+1-containers,syndra_node_exporter,peak_working_set,17,MiB
+1-containers,syndra_node_exporter,peak_working_set_at,2026-09-28T22:15Z,
+1-containers,syndra_node_exporter,peak_rss,10,MiB
+1-containers,syndra_node_exporter,limit,128,MiB
+1-containers,syndra_node_exporter,peak_working_set_of_limit,13.2,%
+1-containers,syndra_node_exporter,oom_events,0,
+1-containers,syndra_node_exporter,starts_in_period,2,
+1-containers,syndra_postgres,peak_working_set,278,MiB
+1-containers,syndra_postgres,peak_working_set_at,2026-09-18T12:00Z,
+1-containers,syndra_postgres,peak_rss,39,MiB
+1-containers,syndra_postgres,limit,none,
+1-containers,syndra_postgres,peak_working_set_of_host,7.3,%
+1-containers,syndra_postgres,oom_events,0,
+1-containers,syndra_postgres,starts_in_period,2,
+1-containers,syndra_prefect_server,peak_working_set,216,MiB
+1-containers,syndra_prefect_server,peak_working_set_at,2026-09-28T22:15Z,
+1-containers,syndra_prefect_server,peak_rss,212,MiB
+1-containers,syndra_prefect_server,limit,512,MiB
+1-containers,syndra_prefect_server,peak_working_set_of_limit,42.3,%
+1-containers,syndra_prefect_server,oom_events,0,
+1-containers,syndra_prefect_server,starts_in_period,7,
+1-containers,syndra_prometheus,peak_working_set,143,MiB
+1-containers,syndra_prometheus,peak_working_set_at,2026-09-13T05:15Z,
+1-containers,syndra_prometheus,peak_rss,116,MiB
+1-containers,syndra_prometheus,limit,384,MiB
+1-containers,syndra_prometheus,peak_working_set_of_limit,37.3,%
+1-containers,syndra_prometheus,oom_events,0,
+1-containers,syndra_prometheus,starts_in_period,2,
+1-containers,syndra_qdrant,peak_working_set,296,MiB
+1-containers,syndra_qdrant,peak_working_set_at,2026-09-28T23:00Z,
+1-containers,syndra_qdrant,peak_rss,49,MiB
+1-containers,syndra_qdrant,limit,none,
+1-containers,syndra_qdrant,peak_working_set_of_host,7.8,%
+1-containers,syndra_qdrant,oom_events,0,
+1-containers,syndra_qdrant,starts_in_period,1,
+1-containers,syndra_redis,peak_working_set,5,MiB
+1-containers,syndra_redis,peak_working_set_at,2026-09-28T22:00Z,
+1-containers,syndra_redis,peak_rss,3,MiB
+1-containers,syndra_redis,limit,none,
+1-containers,syndra_redis,peak_working_set_of_host,0.1,%
+1-containers,syndra_redis,oom_events,0,
+1-containers,syndra_redis,starts_in_period,2,
+1-containers,syndra_scheduler,peak_working_set,1144,MiB
+1-containers,syndra_scheduler,peak_working_set_at,2026-09-17T17:00Z,
+1-containers,syndra_scheduler,peak_rss,975,MiB
+1-containers,syndra_scheduler,limit,2560,MiB
+1-containers,syndra_scheduler,peak_working_set_of_limit,44.7,%
+1-containers,syndra_scheduler,oom_events,0,
+1-containers,syndra_scheduler,starts_in_period,5,
+1-starts,all,start_groups,6,
+1-starts,2026-09-10T12:19Z,containers_started,api cadvisor node_exporter prefect_server prometheus scheduler,
+1-starts,2026-09-15T11:37Z,containers_started,api prefect_server scheduler,
+1-starts,2026-09-15T12:04Z,containers_started,prefect_server,
+1-starts,2026-09-28T20:11Z,containers_started,api caddy demo postgres prefect_server redis scheduler,
+1-starts,2026-09-28T21:58Z,containers_started,api caddy cadvisor node_exporter postgres prefect_server prometheus qdrant redis scheduler,
+1-starts,2026-09-28T22:15Z,containers_started,prefect_server,
+1-host,cpu,samples,31795,1-minute averages
+1-host,cpu,busy_median,17.9,% of 2 cores
+1-host,cpu,busy_p95,22.1,% of 2 cores
+1-host,cpu,busy_max,94.7,% of 2 cores
+1-host,cpu,hourly_mean_median,17.8,"% of 2 cores, 529 hours"
+1-host,cpu,hourly_mean_p95,20.0,"% of 2 cores, 529 hours"
+1-host,cpu,busy_median_etl_minutes,26.8,"% of 2 cores, 783 minutes overlapping an ETL run"
+1-host,cpu,busy_p95_etl_minutes,34.5,% of 2 cores
+1-host,cpu,busy_median_other_minutes,17.8,% of 2 cores
+1-host,memory,total,3814,MiB
+1-host,memory,available_min,1433,MiB
+1-host,memory,available_min_of_total,37.6,%
+1-host,memory,available_min_at,2026-09-30T17:59Z,
+1-host,memory,available_median,2576,MiB
+1-host,disk,size,74.8,GiB
+1-host,disk,used_first,28.06,GiB at 2026-09-10T13:15Z
+1-host,disk,used_last,35.49,GiB at 2026-10-02T14:15Z
+1-host,disk,growth_per_day,345,MiB/day over 22.0 days
+1-host,disk,available_last,36.2,GiB
+1-host,reboots,boot_times_seen,2026-04-06T16:42Z,
+2-latency,sentiment_warm,requests_test_endpoint,720,/api/v1/sentiment/{ticker} 2xx
+2-latency,sentiment_warm,requests_other,1,"same windows, any other handler"
+2-latency,sentiment_warm,server_p50,"(0, 10]","ms, histogram bucket"
+2-latency,sentiment_warm,client_p50,51.5,"ms, from experiment 05"
+2-latency,sentiment_warm,network_p50,"[41.5, 51.5)","ms, client minus server bucket"
+2-latency,sentiment_warm,server_p95,"(0, 10]","ms, histogram bucket"
+2-latency,sentiment_warm,client_p95,90.4,"ms, from experiment 05"
+2-latency,sentiment_warm,network_p95,"[80.4, 90.4)","ms, client minus server bucket"
+2-latency,sentiment_warm,server_p99,"(50, 75]","ms, histogram bucket"
+2-latency,sentiment_warm,client_p99,126.9,"ms, from experiment 05"
+2-latency,sentiment_warm,network_p99,"[51.9, 76.9)","ms, client minus server bucket"
+2-latency,sentiment_warm,share_le_10ms,98.8,%
+2-latency,sentiment_warm,share_le_25ms,98.8,%
+2-latency,sentiment_warm,share_le_50ms,98.8,%
+2-latency,sentiment_warm,share_le_75ms,99.2,%
+2-latency,sentiment_warm,share_le_100ms,100.0,%
+2-latency,sentiment_warm,share_le_250ms,100.0,%
+2-latency,sentiment_cold,requests_test_endpoint,720,/api/v1/sentiment/{ticker} 2xx
+2-latency,sentiment_cold,requests_other,1,"same windows, any other handler"
+2-latency,sentiment_cold,server_p50,"(50, 75]","ms, histogram bucket"
+2-latency,sentiment_cold,client_p50,115.8,"ms, from experiment 05"
+2-latency,sentiment_cold,network_p50,"[40.8, 65.8)","ms, client minus server bucket"
+2-latency,sentiment_cold,server_p95,"(75, 100]","ms, histogram bucket"
+2-latency,sentiment_cold,client_p95,155.2,"ms, from experiment 05"
+2-latency,sentiment_cold,network_p95,"[55.2, 80.2)","ms, client minus server bucket"
+2-latency,sentiment_cold,server_p99,"(75, 100]","ms, histogram bucket"
+2-latency,sentiment_cold,client_p99,259.7,"ms, from experiment 05"
+2-latency,sentiment_cold,network_p99,"[159.7, 184.7)","ms, client minus server bucket"
+2-latency,sentiment_cold,share_le_10ms,0.1,%
+2-latency,sentiment_cold,share_le_25ms,0.1,%
+2-latency,sentiment_cold,share_le_50ms,6.1,%
+2-latency,sentiment_cold,share_le_75ms,60.1,%
+2-latency,sentiment_cold,share_le_100ms,99.2,%
+2-latency,sentiment_cold,share_le_250ms,99.9,%
+2-latency,search_warm,requests_test_endpoint,720,/api/v1/search/semantic 2xx
+2-latency,search_warm,requests_other,0,"same windows, any other handler"
+2-latency,search_warm,server_p50,"(0, 10]","ms, histogram bucket"
+2-latency,search_warm,client_p50,53.8,"ms, from experiment 05"
+2-latency,search_warm,network_p50,"[43.8, 53.8)","ms, client minus server bucket"
+2-latency,search_warm,server_p95,"(0, 10]","ms, histogram bucket"
+2-latency,search_warm,client_p95,84.8,"ms, from experiment 05"
+2-latency,search_warm,network_p95,"[74.8, 84.8)","ms, client minus server bucket"
+2-latency,search_warm,server_p99,"(25, 50]","ms, histogram bucket"
+2-latency,search_warm,client_p99,123.0,"ms, from experiment 05"
+2-latency,search_warm,network_p99,"[73, 98.0)","ms, client minus server bucket"
+2-latency,search_warm,share_le_10ms,98.6,%
+2-latency,search_warm,share_le_25ms,98.9,%
+2-latency,search_warm,share_le_50ms,99.6,%
+2-latency,search_warm,share_le_75ms,100.0,%
+2-latency,search_warm,share_le_100ms,100.0,%
+2-latency,search_warm,share_le_250ms,100.0,%
+2-latency,search_cold,requests_test_endpoint,720,/api/v1/search/semantic 2xx
+2-latency,search_cold,requests_other,0,"same windows, any other handler"
+2-latency,search_cold,server_p50,"(25, 50]","ms, histogram bucket"
+2-latency,search_cold,client_p50,80.0,"ms, from experiment 05"
+2-latency,search_cold,network_p50,"[30, 55.0)","ms, client minus server bucket"
+2-latency,search_cold,server_p95,"(25, 50]","ms, histogram bucket"
+2-latency,search_cold,client_p95,110.9,"ms, from experiment 05"
+2-latency,search_cold,network_p95,"[60.9, 85.9)","ms, client minus server bucket"
+2-latency,search_cold,server_p99,"(50, 75]","ms, histogram bucket"
+2-latency,search_cold,client_p99,142.8,"ms, from experiment 05"
+2-latency,search_cold,network_p99,"[67.8, 92.8)","ms, client minus server bucket"
+2-latency,search_cold,share_le_10ms,0.0,%
+2-latency,search_cold,share_le_25ms,7.1,%
+2-latency,search_cold,share_le_50ms,97.1,%
+2-latency,search_cold,share_le_75ms,99.6,%
+2-latency,search_cold,share_le_100ms,100.0,%
+2-latency,search_cold,share_le_250ms,100.0,%
+3-scheduler,etl_runs,count,166,"runs inside the detailed series, 15 s samples"
+3-scheduler,rss,idle_median,73,"MiB, before each run"
+3-scheduler,rss,peak_median,204,"MiB, per ETL run as sampled"
+3-scheduler,rss,peak_p90,525,"MiB, per ETL run as sampled"
+3-scheduler,rss,peak_max,928,"MiB, detailed series"
+3-scheduler,rss,runs_sampled_near_peak,38 of 166,peak at least half the maximum
+3-scheduler,rss,samples_above_half_peak_median,1,samples of 15 s
+3-scheduler,working_set,idle_median,180,"MiB, before each run"
+3-scheduler,working_set,peak_median,399,"MiB, per ETL run as sampled"
+3-scheduler,working_set,peak_p90,681,"MiB, per ETL run as sampled"
+3-scheduler,working_set,peak_max,1083,"MiB, detailed series"
+3-scheduler,working_set,runs_sampled_near_peak,49 of 166,peak at least half the maximum
+3-scheduler,working_set,samples_above_half_peak_median,1,samples of 15 s
+3-scheduler,working_set,peak_max_full_period,1144,"MiB, experiment 06 containers series"
+3-scheduler,rss,peak_max_full_period,975,"MiB, experiment 06 containers series"
+3-scheduler,experiment_04,peak_rss_production_mode,893.4,"MiB, FinBERT alone, laptop"
+3-scheduler,experiment_04,rss_after_model_load,848.1,MiB
+4-tsdb,now,blocks,529,MiB
+4-tsdb,now,wal,32,MiB
+4-tsdb,last_7_days,growth_per_day,23.0,MiB/day
+4-tsdb,last_14_days,growth_per_day,23.4,MiB/day
+4-tsdb,projection,size_at_180_days,4.14,"GiB, blocks plus current WAL"
+4-tsdb,projection,share_of_size_cap,41,% of 10 GiB
+4-tsdb,projection,days_until_size_cap,438,"days, at this rate"
+4-tsdb,series,head_series_max_in_period,4801,
+4-tsdb,series_now,cadvisor,1214,
+4-tsdb,series_now,node,769,
+4-tsdb,series_now,prometheus,929,
+4-tsdb,series_now,syndra_api,174,
+4-tsdb,now,total_on_disk,561,MiB

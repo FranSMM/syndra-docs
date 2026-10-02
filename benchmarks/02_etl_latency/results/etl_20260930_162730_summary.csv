@@ -1,0 +1,146 @@
+view,group,stage,n,median_s,ci95_low_s,ci95_high_s,p95_s
+weekly,2026-W15,Extract: Generic RSS Spiders,123,1.254,1.241,1.274,1.661
+weekly,2026-W15,Load: PostgreSQL async,123,0.777,0.770,0.785,0.853
+weekly,2026-W15,MLOps: Sentiment Enrichment,123,7.393,7.244,7.552,9.665
+weekly,2026-W15,MLOps: Vector Indexing,123,8.728,8.395,8.825,12.620
+weekly,2026-W15,flow_total,123,18.112,17.927,18.337,50.024
+weekly,2026-W16,Extract: Generic RSS Spiders,168,1.258,1.250,1.266,1.366
+weekly,2026-W16,Load: PostgreSQL async,168,0.775,0.770,0.778,0.818
+weekly,2026-W16,MLOps: Sentiment Enrichment,168,7.454,7.318,7.623,8.588
+weekly,2026-W16,MLOps: Vector Indexing,168,8.877,8.840,8.901,9.144
+weekly,2026-W16,flow_total,168,18.514,18.371,18.663,20.271
+weekly,2026-W17,Extract: Generic RSS Spiders,165,1.276,1.267,1.291,1.405
+weekly,2026-W17,Load: PostgreSQL async,165,0.747,0.742,0.753,0.802
+weekly,2026-W17,MLOps: Sentiment Enrichment,165,7.507,7.398,7.696,8.839
+weekly,2026-W17,MLOps: Vector Indexing,165,8.583,8.548,8.635,9.043
+weekly,2026-W17,flow_total,165,18.257,18.105,18.463,19.916
+weekly,2026-W18,Extract: Generic RSS Spiders,165,1.265,1.255,1.276,1.367
+weekly,2026-W18,Load: PostgreSQL async,165,0.727,0.726,0.732,0.771
+weekly,2026-W18,MLOps: Sentiment Enrichment,165,7.588,7.378,7.657,8.620
+weekly,2026-W18,MLOps: Vector Indexing,165,8.492,8.466,8.515,8.804
+weekly,2026-W18,flow_total,165,18.209,18.070,18.336,19.598
+weekly,2026-W19,Extract: Generic RSS Spiders,168,1.263,1.254,1.270,1.366
+weekly,2026-W19,Load: PostgreSQL async,168,0.727,0.722,0.732,0.770
+weekly,2026-W19,MLOps: Sentiment Enrichment,168,7.457,7.339,7.534,8.639
+weekly,2026-W19,MLOps: Vector Indexing,168,8.461,8.437,8.487,8.697
+weekly,2026-W19,flow_total,168,18.007,17.922,18.166,19.344
+weekly,2026-W20,Extract: Generic RSS Spiders,168,1.244,1.233,1.252,1.372
+weekly,2026-W20,Load: PostgreSQL async,168,0.721,0.714,0.725,0.769
+weekly,2026-W20,MLOps: Sentiment Enrichment,168,7.234,7.043,7.418,8.269
+weekly,2026-W20,MLOps: Vector Indexing,168,8.367,8.332,8.393,8.649
+weekly,2026-W20,flow_total,168,17.707,17.496,17.816,19.074
+weekly,2026-W21,Extract: Generic RSS Spiders,168,1.246,1.233,1.262,1.368
+weekly,2026-W21,Load: PostgreSQL async,168,0.722,0.716,0.729,0.782
+weekly,2026-W21,MLOps: Sentiment Enrichment,168,7.147,7.053,7.222,8.462
+weekly,2026-W21,MLOps: Vector Indexing,168,8.279,8.262,8.317,8.596
+weekly,2026-W21,flow_total,168,17.521,17.379,17.647,19.037
+weekly,2026-W22,Extract: Generic RSS Spiders,168,1.238,1.229,1.245,1.344
+weekly,2026-W22,Load: PostgreSQL async,168,0.716,0.711,0.720,0.761
+weekly,2026-W22,MLOps: Sentiment Enrichment,168,7.033,6.950,7.156,8.304
+weekly,2026-W22,MLOps: Vector Indexing,168,8.229,8.205,8.246,8.449
+weekly,2026-W22,flow_total,168,17.363,17.237,17.436,18.787
+weekly,2026-W23,Extract: Generic RSS Spiders,168,1.234,1.222,1.243,1.387
+weekly,2026-W23,Load: PostgreSQL async,168,0.718,0.716,0.723,0.762
+weekly,2026-W23,MLOps: Sentiment Enrichment,168,7.150,6.963,7.292,8.303
+weekly,2026-W23,MLOps: Vector Indexing,168,8.268,8.248,8.302,8.565
+weekly,2026-W23,flow_total,168,17.491,17.370,17.745,18.737
+weekly,2026-W24,Extract: Generic RSS Spiders,168,1.244,1.235,1.257,1.343
+weekly,2026-W24,Load: PostgreSQL async,168,0.719,0.714,0.724,0.774
+weekly,2026-W24,MLOps: Sentiment Enrichment,168,7.355,7.153,7.531,10.035
+weekly,2026-W24,MLOps: Vector Indexing,168,8.375,8.358,8.420,17.496
+weekly,2026-W24,flow_total,168,17.873,17.590,18.018,29.815
+weekly,2026-W25,Extract: Generic RSS Spiders,168,1.252,1.246,1.260,1.384
+weekly,2026-W25,Load: PostgreSQL async,168,0.724,0.720,0.729,0.780
+weekly,2026-W25,MLOps: Sentiment Enrichment,168,7.127,7.014,7.284,8.248
+weekly,2026-W25,MLOps: Vector Indexing,168,8.351,8.328,8.369,8.653
+weekly,2026-W25,flow_total,168,17.608,17.486,17.819,18.974
+weekly,2026-W26,Extract: Generic RSS Spiders,168,1.246,1.237,1.257,1.348
+weekly,2026-W26,Load: PostgreSQL async,168,0.724,0.722,0.729,0.791
+weekly,2026-W26,MLOps: Sentiment Enrichment,168,7.242,7.143,7.344,8.405
+weekly,2026-W26,MLOps: Vector Indexing,168,8.396,8.368,8.427,8.718
+weekly,2026-W26,flow_total,168,17.747,17.644,17.919,19.219
+weekly,2026-W27,Extract: Generic RSS Spiders,168,1.250,1.241,1.262,1.354
+weekly,2026-W27,Load: PostgreSQL async,168,0.720,0.716,0.725,0.771
+weekly,2026-W27,MLOps: Sentiment Enrichment,168,7.047,6.965,7.237,8.641
+weekly,2026-W27,MLOps: Vector Indexing,168,8.345,8.317,8.372,8.654
+weekly,2026-W27,flow_total,168,17.546,17.376,17.712,19.292
+weekly,2026-W28,Extract: Generic RSS Spiders,168,1.256,1.249,1.265,1.364
+weekly,2026-W28,Load: PostgreSQL async,168,0.734,0.728,0.738,0.777
+weekly,2026-W28,MLOps: Sentiment Enrichment,168,7.091,6.949,7.190,8.388
+weekly,2026-W28,MLOps: Vector Indexing,168,8.340,8.303,8.365,8.648
+weekly,2026-W28,flow_total,168,17.573,17.423,17.665,19.004
+weekly,2026-W29,Extract: Generic RSS Spiders,168,1.268,1.259,1.277,1.369
+weekly,2026-W29,Load: PostgreSQL async,168,0.731,0.727,0.738,0.787
+weekly,2026-W29,MLOps: Sentiment Enrichment,168,7.196,7.093,7.261,8.218
+weekly,2026-W29,MLOps: Vector Indexing,168,8.431,8.409,8.454,8.690
+weekly,2026-W29,flow_total,168,17.736,17.641,17.854,19.061
+weekly,2026-W30,Extract: Generic RSS Spiders,167,1.258,1.246,1.269,1.387
+weekly,2026-W30,Load: PostgreSQL async,167,0.737,0.731,0.742,0.790
+weekly,2026-W30,MLOps: Sentiment Enrichment,167,7.152,7.059,7.218,7.846
+weekly,2026-W30,MLOps: Vector Indexing,167,8.391,8.357,8.429,8.789
+weekly,2026-W30,flow_total,167,17.610,17.493,17.688,18.506
+weekly,2026-W31,Extract: Generic RSS Spiders,168,1.251,1.242,1.264,1.363
+weekly,2026-W31,Load: PostgreSQL async,168,0.726,0.723,0.732,0.774
+weekly,2026-W31,MLOps: Sentiment Enrichment,168,7.071,6.968,7.207,7.894
+weekly,2026-W31,MLOps: Vector Indexing,168,8.394,8.362,8.418,8.702
+weekly,2026-W31,flow_total,168,17.591,17.474,17.725,18.622
+weekly,2026-W32,Extract: Generic RSS Spiders,168,1.254,1.247,1.269,1.362
+weekly,2026-W32,Load: PostgreSQL async,168,0.725,0.721,0.727,0.779
+weekly,2026-W32,MLOps: Sentiment Enrichment,168,7.264,7.184,7.381,8.067
+weekly,2026-W32,MLOps: Vector Indexing,168,8.417,8.389,8.442,8.824
+weekly,2026-W32,flow_total,168,17.828,17.713,17.947,18.756
+weekly,2026-W33,Extract: Generic RSS Spiders,168,1.265,1.258,1.277,1.343
+weekly,2026-W33,Load: PostgreSQL async,168,0.731,0.727,0.734,0.785
+weekly,2026-W33,MLOps: Sentiment Enrichment,168,7.205,7.091,7.364,8.108
+weekly,2026-W33,MLOps: Vector Indexing,168,8.465,8.440,8.491,8.726
+weekly,2026-W33,flow_total,168,17.769,17.713,17.994,18.977
+weekly,2026-W34,Extract: Generic RSS Spiders,168,1.261,1.252,1.267,1.356
+weekly,2026-W34,Load: PostgreSQL async,168,0.727,0.723,0.735,0.785
+weekly,2026-W34,MLOps: Sentiment Enrichment,168,7.205,7.133,7.256,8.063
+weekly,2026-W34,MLOps: Vector Indexing,168,8.421,8.403,8.461,8.713
+weekly,2026-W34,flow_total,168,17.713,17.628,17.831,18.934
+weekly,2026-W35,Extract: Generic RSS Spiders,167,3.595,3.580,3.610,3.753
+weekly,2026-W35,Load: PostgreSQL async,167,2.137,2.130,2.154,2.268
+weekly,2026-W35,MLOps: Sentiment Enrichment,167,7.322,7.229,7.448,8.279
+weekly,2026-W35,MLOps: Vector Indexing,167,8.440,8.413,8.471,8.793
+weekly,2026-W35,flow_total,167,21.611,21.465,21.806,22.871
+weekly,2026-W36,Extract: Generic RSS Spiders,167,3.564,3.521,3.585,3.802
+weekly,2026-W36,Load: PostgreSQL async,167,2.158,2.149,2.170,2.273
+weekly,2026-W36,MLOps: Sentiment Enrichment,167,7.526,7.384,7.642,8.780
+weekly,2026-W36,MLOps: Vector Indexing,167,8.539,8.470,8.678,9.443
+weekly,2026-W36,flow_total,167,21.954,21.798,22.114,23.571
+weekly,2026-W37,Extract: Generic RSS Spiders,167,3.031,3.011,3.050,3.679
+weekly,2026-W37,Load: PostgreSQL async,167,2.159,2.149,2.175,2.266
+weekly,2026-W37,MLOps: Sentiment Enrichment,167,8.084,7.973,8.230,9.276
+weekly,2026-W37,MLOps: Vector Indexing,167,9.038,9.010,9.060,9.443
+weekly,2026-W37,flow_total,167,22.450,22.299,22.562,24.102
+weekly,2026-W38,Extract: Generic RSS Spiders,168,2.990,2.977,3.007,3.210
+weekly,2026-W38,Load: PostgreSQL async,168,2.165,2.154,2.176,2.256
+weekly,2026-W38,MLOps: Sentiment Enrichment,168,8.223,8.115,8.366,9.456
+weekly,2026-W38,MLOps: Vector Indexing,168,9.026,9.001,9.057,9.547
+weekly,2026-W38,flow_total,168,22.555,22.416,22.681,24.313
+weekly,2026-W39,Extract: Generic RSS Spiders,168,3.030,3.013,3.053,3.238
+weekly,2026-W39,Load: PostgreSQL async,168,2.159,2.146,2.169,2.274
+weekly,2026-W39,MLOps: Sentiment Enrichment,168,7.388,7.251,7.669,9.556
+weekly,2026-W39,MLOps: Vector Indexing,168,8.898,8.830,8.960,9.360
+weekly,2026-W39,flow_total,168,21.617,21.331,21.968,24.286
+weekly,2026-W40,Extract: Generic RSS Spiders,60,3.426,3.360,3.477,3.670
+weekly,2026-W40,Load: PostgreSQL async,60,2.128,2.118,2.148,2.252
+weekly,2026-W40,MLOps: Sentiment Enrichment,60,7.481,7.284,7.684,8.853
+weekly,2026-W40,MLOps: Vector Indexing,60,9.056,8.987,9.144,9.495
+weekly,2026-W40,flow_total,60,22.312,21.892,22.527,24.177
+feeds,1 feeds,Extract: Generic RSS Spiders,3257,1.255,1.252,1.257,1.366
+feeds,3 feeds,Extract: Generic RSS Spiders,879,3.101,3.083,3.127,3.718
+feeds,1 feeds,Load: PostgreSQL async,3257,0.728,0.727,0.730,0.787
+feeds,3 feeds,Load: PostgreSQL async,879,2.156,2.152,2.163,2.271
+feeds,1 feeds,MLOps: Sentiment Enrichment,3257,7.219,7.192,7.245,8.489
+feeds,3 feeds,MLOps: Sentiment Enrichment,879,7.723,7.643,7.800,9.259
+feeds,1 feeds,MLOps: Vector Indexing,3257,8.409,8.399,8.416,8.917
+feeds,3 feeds,MLOps: Vector Indexing,879,8.931,8.902,8.956,9.416
+feeds,1 feeds,flow_total,3257,17.772,17.744,17.811,19.344
+feeds,3 feeds,flow_total,879,22.131,22.057,22.221,24.023
+feeds_difference,3 vs 1 feeds,Extract: Generic RSS Spiders,4136,1.846,1.827,1.872,
+feeds_difference,3 vs 1 feeds,Load: PostgreSQL async,4136,1.428,1.424,1.434,
+feeds_difference,3 vs 1 feeds,MLOps: Sentiment Enrichment,4136,0.504,0.422,0.586,
+feeds_difference,3 vs 1 feeds,MLOps: Vector Indexing,4136,0.522,0.493,0.549,
+feeds_difference,3 vs 1 feeds,flow_total,4136,4.359,4.271,4.453,

@@ -1,0 +1,11 @@
+date: 2026-09-30T16:26:11+02:00
+repo_commit: e5c21d1
+dirty_tree: no
+# Corrected 2026-10-02: the tree held only untracked files (ADR 037-041, troubleshooting 022); tracked files matched repo_commit.
+repetitions: 30
+image: ghcr.io/fransmm/syndra-etl:149e5d9
+cores: 2
+memory_mb: 3814
+python: 3.11.16
+scrapy: 2.19.0
+sqlalchemy: 2.0.54

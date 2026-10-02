@@ -1,0 +1,9 @@
+date: 2026-09-30T16:27:30+02:00
+repo_commit: e5c21d1
+dirty_tree: no
+# Corrected 2026-10-02: the tree held only untracked files (ADR 037-041, troubleshooting 022); tracked files matched repo_commit.
+deployed_etl_tag: 149e5d9
+prefect_server_image: prefecthq/prefect:3.8.6-python3.12@sha256:ec9e58deaf30002dd65ebb755ca3d9eb5f169902882abf18c79261a4aa95bfe3
+prefect_db_revision: c8d5f2a71b3e
+flow_runs: 4208 (2026-04-07 to 2026-09-30)
+task_runs: 16820

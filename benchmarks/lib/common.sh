@@ -61,8 +61,8 @@ write_environment_header() {
   {
     echo "date: $(date -Iseconds)"
     echo "repo_commit: $(git -C "$REPO_ROOT" rev-parse --short HEAD 2>/dev/null || echo unknown)"
-    # With uncommitted changes the commit above does not identify the measured code.
-    if [ -n "$(git -C "$REPO_ROOT" status --porcelain 2>/dev/null)" ]; then
+    # Results and documents are not measured code; any other change or new file is.
+    if [ -n "$(git -C "$REPO_ROOT" status --porcelain --untracked-files=all -- . ':(exclude,glob)benchmarks/*/results/**' ':(exclude)docs' 2>/dev/null)" ]; then
       echo "dirty_tree: yes"
     else
       echo "dirty_tree: no"

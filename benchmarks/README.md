@@ -11,6 +11,7 @@ Reproducible experiments backing the figures of Chapter 4 of the dissertation. E
 | 03 | [Per-ticker query indexes](./03_jsonb_gin/) | Which index does the per-ticker query need, from what size, and is the Bronze GIN of ADR 012 still used? | local copy of production data | Ready |
 | 04 | [Inference resources](./04_inference_resources/) | How do time and memory of FinBERT change from one text at a time to batches? | local, deployed image | Ready |
 | 05 | [API latency](./05_api_latency/) | How long does a request take under the load of one client, with the cache warm and cold? | production, 0.4 requests/s | Ready, needs a test key |
+| 06 | [Production metrics](./06_production_metrics/) | How much memory, CPU and disk does production use against its limits, how much of the 05 latency is network, and how fast does the TSDB grow? | production history, read-only | Measured |
 
 ## Rules
 
@@ -18,8 +19,8 @@ Reproducible experiments backing the figures of Chapter 4 of the dissertation. E
 2. **Every run records its own environment:** date, repository commit, container image, cores, memory and library versions.
 3. **A CSV is never edited by hand.** If a data point is wrong, measure again.
 4. **Fixed seed** in anything involving randomness, such as bootstrap resampling.
-5. **Fixed repetition count, 30.** The first one is reported separately because of the cache effect: the first import pays for the disk read that later ones find in the page cache. Where an experiment cannot follow this rule (02 uses every recorded run; 05 measures hundreds of requests per run), its README says why.
-6. **Whatever is quoted in the dissertation lives in the repository**, and the dissertation cites the exact commit. If the environment file says `dirty_tree: yes`, that commit does not identify the measured code and the run cannot be quoted.
+5. **Fixed repetition count, 30.** The first one is reported separately because of the cache effect: the first import pays for the disk read that later ones find in the page cache. Where an experiment cannot follow this rule (02 uses every recorded run; 05 measures hundreds of requests per run; 06 reads time series, which are not repetitions), its README says why.
+6. **Whatever is quoted in the dissertation lives in the repository**, and the dissertation cites the exact commit. If the environment file says `dirty_tree: yes`, some code differed from that commit, so the commit does not identify the measured code and the run cannot be quoted. Files under `results/` and `docs/` do not count; any other change or new file does.
 
 No machine address or credential is written into these files: the SSH target comes from `VPS_USER` and `VPS_IP` in the root `.env`, which is not in git, and API keys are passed through the environment or a git-ignored file. Copies of production data (03 and 04) hold scraped article text, so they live in `~/.cache/syndra-bench/` and never in the repository. Every query against production runs in a session forced read-only.
 

@@ -1,0 +1,23 @@
+date: 2026-09-30T16:29:00+02:00
+repo_commit: e5c21d1
+dirty_tree: no
+# Corrected 2026-10-02: the tree held only untracked files (ADR 037-041, troubleshooting 022); tracked files matched repo_commit.
+postgres_image: postgres:15.19-alpine3.24@sha256:f7d23353e1b15400d22ebe31189f4d314b87a4c129cc400c8c2d8d4ca127bf81
+container_limits: --cpus 2
+dump_taken: 2026-09-30T12:37:13+02:00
+dump_sha256: ac567328405df0cbaca453780ff1da97d33fc35b914864b42ea3b788aecd6d78
+sizes: 10000 25000 50000 all
+repetitions: 30
+# Production usage of the Bronze GIN index from ADR 012, since statistics were last reset:
+production_ix_raw_articles_tickers_scans: 0
+production_stats_reset: never
+server_version: PostgreSQL 15.19 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+shared_buffers: 128MB
+work_mem: 4MB
+effective_cache_size: 4GB
+random_page_cost: 4
+max_parallel_workers_per_gather: 2
+tickers at size 10000 (10000 rows): common=NVDA (167), rare=ZNTL (1), typical=MS (75)
+tickers at size 25000 (25000 rows): common=NVDA (520), rare=ZVIA (1), typical=NOW (67)
+tickers at size 50000 (50000 rows): common=NVDA (1069), rare=ZURA (1), typical=MA (74)
+tickers at size all (74300 rows): common=NVDA (1847), rare=ZUMZ (1), typical=MRNA (81)
