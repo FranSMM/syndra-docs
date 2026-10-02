@@ -8505,3 +8505,5 @@ stage_start,stage,state,seconds,n_articles,n_batches
 2026-10-02T12:58:54Z,MLOps: Vector Indexing,COMPLETED,9.545,14,1
 2026-10-02T13:58:46Z,MLOps: Sentiment Enrichment,COMPLETED,8.946,16,1
 2026-10-02T13:58:55Z,MLOps: Vector Indexing,COMPLETED,9.332,16,1
+2026-10-02T14:58:46Z,MLOps: Sentiment Enrichment,COMPLETED,8.373,9,1
+2026-10-02T14:58:55Z,MLOps: Vector Indexing,COMPLETED,9.347,9,1

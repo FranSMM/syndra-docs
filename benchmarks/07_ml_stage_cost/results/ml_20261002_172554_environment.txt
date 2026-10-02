@@ -1,9 +1,10 @@
-date: 2026-10-02T16:43:08+02:00
-repo_commit: 3211ce5
-dirty_tree: yes
+date: 2026-10-02T17:25:54+02:00
+repo_commit: 428bbbb
+dirty_tree: no
 repetitions: 30
 image: ghcr.io/fransmm/syndra-etl:149e5d9
 cores: 2
+scheduler_started: 2026-09-28T21:58:37.950923367Z
 hf_hub_offline_in_container: unset
 python: 3.11.16
 torch: 2.14.0+cpu

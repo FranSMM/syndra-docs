@@ -83,24 +83,24 @@ question,subject,metric,value,unit
 1-starts,2026-09-28T20:11Z,containers_started,api caddy demo postgres prefect_server redis scheduler,
 1-starts,2026-09-28T21:58Z,containers_started,api caddy cadvisor node_exporter postgres prefect_server prometheus qdrant redis scheduler,
 1-starts,2026-09-28T22:15Z,containers_started,prefect_server,
-1-host,cpu,samples,31810,1-minute averages
+1-host,cpu,samples,31855,1-minute averages
 1-host,cpu,busy_median,17.9,% of 2 cores
-1-host,cpu,busy_p95,22.1,% of 2 cores
+1-host,cpu,busy_p95,22.2,% of 2 cores
 1-host,cpu,busy_max,94.7,% of 2 cores
-1-host,cpu,hourly_mean_median,17.8,"% of 2 cores, 529 hours"
-1-host,cpu,hourly_mean_p95,20.0,"% of 2 cores, 529 hours"
-1-host,cpu,busy_median_etl_minutes,26.8,"% of 2 cores, 783 minutes overlapping an ETL run"
+1-host,cpu,hourly_mean_median,17.8,"% of 2 cores, 530 hours"
+1-host,cpu,hourly_mean_p95,20.0,"% of 2 cores, 530 hours"
+1-host,cpu,busy_median_etl_minutes,26.8,"% of 2 cores, 785 minutes overlapping an ETL run"
 1-host,cpu,busy_p95_etl_minutes,34.5,% of 2 cores
 1-host,cpu,busy_median_other_minutes,17.8,% of 2 cores
 1-host,memory,total,3814,MiB
-1-host,memory,available_min,1433,MiB
-1-host,memory,available_min_of_total,37.6,%
-1-host,memory,available_min_at,2026-09-30T17:59Z,
+1-host,memory,available_min,1381,MiB
+1-host,memory,available_min_of_total,36.2,%
+1-host,memory,available_min_at,2026-10-02T14:59Z,
 1-host,memory,available_median,2576,MiB
 1-host,disk,size,74.8,GiB
 1-host,disk,used_first,28.06,GiB at 2026-09-10T13:15Z
-1-host,disk,used_last,35.49,GiB at 2026-10-02T14:15Z
-1-host,disk,growth_per_day,345,MiB/day over 22.0 days
+1-host,disk,used_last,35.51,GiB at 2026-10-02T15:15Z
+1-host,disk,growth_per_day,345,MiB/day over 22.1 days
 1-host,disk,available_last,36.2,GiB
 1-host,reboots,boot_times_seen,2026-04-06T16:42Z,
 2-latency,sentiment_warm,requests_test_endpoint,720,/api/v1/sentiment/{ticker} 2xx
@@ -178,7 +178,7 @@ question,subject,metric,value,unit
 3-scheduler,rss,peak_max,928,"MiB, detailed series"
 3-scheduler,rss,runs_sampled_near_peak,38 of 166,peak at least half the maximum
 3-scheduler,rss,samples_above_half_peak_median,1,samples of 15 s
-3-scheduler,working_set,idle_median,180,"MiB, before each run"
+3-scheduler,working_set,idle_median,179,"MiB, before each run"
 3-scheduler,working_set,peak_median,399,"MiB, per ETL run as sampled"
 3-scheduler,working_set,peak_p90,681,"MiB, per ETL run as sampled"
 3-scheduler,working_set,peak_max,1083,"MiB, detailed series"
@@ -188,11 +188,11 @@ question,subject,metric,value,unit
 3-scheduler,rss,peak_max_full_period,975,"MiB, experiment 06 containers series"
 3-scheduler,experiment_04,peak_rss_production_mode,893.4,"MiB, FinBERT alone, laptop"
 3-scheduler,experiment_04,rss_after_model_load,848.1,MiB
-4-tsdb,now,blocks,529,MiB
-4-tsdb,now,wal,32,MiB
+4-tsdb,now,blocks,531,MiB
+4-tsdb,now,wal,19,MiB
 4-tsdb,last_7_days,growth_per_day,23.0,MiB/day
 4-tsdb,last_14_days,growth_per_day,23.4,MiB/day
-4-tsdb,projection,size_at_180_days,4.14,"GiB, blocks plus current WAL"
+4-tsdb,projection,size_at_180_days,4.13,"GiB, blocks plus current WAL"
 4-tsdb,projection,share_of_size_cap,41,% of 10 GiB
 4-tsdb,projection,days_until_size_cap,438,"days, at this rate"
 4-tsdb,series,head_series_max_in_period,4801,
@@ -200,4 +200,43 @@ question,subject,metric,value,unit
 4-tsdb,series_now,node,769,
 4-tsdb,series_now,prometheus,929,
 4-tsdb,series_now,syndra_api,174,
-4-tsdb,now,total_on_disk,561,MiB
+4-tsdb,now,total_on_disk,550,MiB
+5-cpu,blocks,count,1596,15-minute blocks without an ETL run
+5-cpu,syndra_api,median,0.12,% of 2 cores
+5-cpu,syndra_api,p95,0.12,% of 2 cores
+5-cpu,syndra_caddy,median,0.00,% of 2 cores
+5-cpu,syndra_caddy,p95,0.02,% of 2 cores
+5-cpu,syndra_cadvisor,median,6.40,% of 2 cores
+5-cpu,syndra_cadvisor,p95,7.44,% of 2 cores
+5-cpu,syndra_demo,median,0.45,% of 2 cores
+5-cpu,syndra_demo,p95,0.47,% of 2 cores
+5-cpu,syndra_node_exporter,median,0.12,% of 2 cores
+5-cpu,syndra_node_exporter,p95,0.13,% of 2 cores
+5-cpu,syndra_postgres,median,0.38,% of 2 cores
+5-cpu,syndra_postgres,p95,0.41,% of 2 cores
+5-cpu,syndra_prefect_server,median,1.82,% of 2 cores
+5-cpu,syndra_prefect_server,p95,1.87,% of 2 cores
+5-cpu,syndra_prometheus,median,0.28,% of 2 cores
+5-cpu,syndra_prometheus,p95,0.30,% of 2 cores
+5-cpu,syndra_qdrant,median,0.02,% of 2 cores
+5-cpu,syndra_qdrant,p95,0.02,% of 2 cores
+5-cpu,syndra_redis,median,0.30,% of 2 cores
+5-cpu,syndra_redis,p95,0.31,% of 2 cores
+5-cpu,syndra_scheduler,median,0.03,% of 2 cores
+5-cpu,syndra_scheduler,p95,0.03,% of 2 cores
+5-cpu,group_observability,median,6.81,"% of 2 cores, cadvisor + node_exporter + prometheus"
+5-cpu,group_observability,p95,7.83,% of 2 cores
+5-cpu,group_syndra,median,3.12,"% of 2 cores, every other container"
+5-cpu,group_syndra,p95,3.24,% of 2 cores
+5-cpu,all_containers,median,9.83,% of 2 cores
+5-cpu,all_containers,p95,11.00,% of 2 cores
+5-cpu,host_running,median,9.90,"% of 2 cores, user + system + nice + irq + softirq"
+5-cpu,host_running,p95,11.13,% of 2 cores
+5-cpu,host_outside_containers,median,0.15,% of 2 cores
+5-cpu,host_outside_containers,p95,0.58,% of 2 cores
+5-cpu,host_steal,median,0.00,"% of 2 cores, taken by the hypervisor"
+5-cpu,host_steal,p95,0.00,% of 2 cores
+5-cpu,host_iowait,median,7.18,"% of 2 cores, waiting for disk"
+5-cpu,host_iowait,p95,8.34,% of 2 cores
+5-cpu,host_busy,median,17.11,"% of 2 cores, every mode but idle, as in question 1"
+5-cpu,host_busy,p95,19.36,% of 2 cores
