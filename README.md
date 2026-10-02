@@ -16,9 +16,11 @@
 
 🌐 **[syndradata.com](https://syndradata.com/)** · 📊 **[Live demo](https://demo.syndradata.com/)** · 📖 **[API docs](https://api.syndradata.com/docs)**
 
+<!--- 
 <p align="center">
   <img src="assets/public/syndra_demo_dashboard.png" alt="Syndra Demo Dashboard" width="100%">
 </p>
+--->
 
 **Syndra** is an enterprise-grade, B2B Data-as-a-Service (DaaS) platform engineered for quantitative funds and financial intelligence systems. It delivers strictly typed, real-time financial sentiment analysis and structured metadata through a robust, API-first architecture.
 
