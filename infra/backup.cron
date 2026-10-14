@@ -1,0 +1,3 @@
+# Crontab line for the syndra user on the VPS (crontab -e). Runs at 03:00,
+# outside the hourly ETL, which starts at minute 58.
+0 3 * * * /home/syndra/backup_syndra.sh

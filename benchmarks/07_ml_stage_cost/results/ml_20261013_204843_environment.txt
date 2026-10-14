@@ -1,0 +1,13 @@
+date: 2026-10-13T20:48:43+02:00
+repo_commit: f49276b
+dirty_tree: no
+repetitions: 30
+image: ghcr.io/fransmm/syndra-etl:f49276b
+cores: 2
+scheduler_started: 2026-10-03T17:55:17.895222252Z
+hf_hub_offline_in_container: 1
+python: 3.11.16
+torch: 2.14.0+cpu
+transformers: 5.17.0
+sentence_transformers: 6.1.0
+prefect_db_revision: c8d5f2a71b3e
