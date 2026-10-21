@@ -43,9 +43,10 @@ data/
 
 Refer to `.env.example` in the root directory. Critical variables include:
 
-- `DATABASE_URL`
-- `QDRANT_HOST`
-- `API_KEY_SECRET`
+- `POSTGRES_USER`, `POSTGRES_PASSWORD`, `POSTGRES_SERVER`, `POSTGRES_DB`
+- `PREFECT_API_DATABASE_CONNECTION_URL`
+- `QDRANT_HOST`, `REDIS_URL`
+- `VPS_USER`, `VPS_IP`, `DEPLOY_DIR` (read by `deploy.sh` and the check scripts)
 
 ---
 
